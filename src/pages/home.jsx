@@ -12,6 +12,10 @@ function Home() {
   return (
     <div>
       <h1 className='home-welcome-text'>Welcome to Treasured Dance Studio!</h1>
+      <p className='home-welcome-content'>
+        A premier dance studio located in Meridian, Idaho offering clases for 
+        all ages.
+      </p>
       <div className='home-studio-img-div'>
         <img className='home-studio-img'src={StudioFullImg} alt='The studio'></img>
       </div>

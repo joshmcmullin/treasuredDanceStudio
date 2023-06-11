@@ -40,6 +40,7 @@ function Contact() {
             user_email: '',
             user_phone: ''
           })
+          window.alert("Message sent successfully!");
       }, (error) => {
           console.log(error.text);
       });
