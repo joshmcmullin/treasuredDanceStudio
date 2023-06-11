@@ -1,19 +1,39 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 import CustomLink from './CustomLink';
 import SiteLogo from '../images/logoFullShot.jpg';
-import AdjSiteLogo from '../images/croppedLogoFullShot.jpg';
+import LongLogo from '../images/logoLong.png';
 import HamburgerIcon from '../images/hamburgerIcon.png';
 
 function Navbar() {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const navbarRef = useRef(null);
+
+  function closeNav() {
+    setIsNavExpanded(false);
+  }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        closeNav();
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    }
+  }, []);
 
   return (
-    <nav className='nav'>
-      <Link to='/' className='site-title'>
+    <nav className='nav' ref={navbarRef}>
+      {/* <Link to='/' className='site-title'> */}
         <img className='site-logo' src={SiteLogo} alt='Treasured Dance Logo'/>
-      </Link>
+        <img className='site-logo-long' src={LongLogo} alt='Treasured Dance Logo' />
+      {/* </Link> */}
       <button className='hamburger' onClick={() => {
         setIsNavExpanded(!isNavExpanded);
       }}>
@@ -21,9 +41,10 @@ function Navbar() {
       </button>
       <div className={isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'}>
         <ul>
-          <CustomLink to='/about'>About</CustomLink>
-          <CustomLink to='/classes'>Classes</CustomLink>
-          <CustomLink to='/get-started'>Get Started</CustomLink>
+          <CustomLink to='/' onClick={closeNav}>Home</CustomLink>
+          <CustomLink to='/about' onClick={closeNav}>About</CustomLink>
+          <CustomLink to='/classes' onClick={closeNav}>Classes</CustomLink>
+          <CustomLink to='/get-started' onClick={closeNav}>Get Started</CustomLink>
         </ul>
       </div>
     </nav>
