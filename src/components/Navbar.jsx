@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 import CustomLink from './CustomLink';
 import SiteLogo from '../images/logoFullShot.jpg';
+import SiteLogo2 from '../images/logoFullShot2.jpg';
 import LongLogo from '../images/logoLong.png';
 import HamburgerIcon from '../images/hamburgerIcon.png';
 
@@ -31,8 +32,8 @@ function Navbar() {
   return (
     <nav className='nav' ref={navbarRef}>
       {/* <Link to='/' className='site-title'> */}
-        <img className='site-logo' src={SiteLogo} alt='Treasured Dance Logo'/>
-        <img className='site-logo-long' src={LongLogo} alt='Treasured Dance Logo' />
+        <img className='site-logo' src={SiteLogo2} alt='Treasured Dance Logo'/>
+        {/* <img className='site-logo-long' src={LongLogo} alt='Treasured Dance Logo' /> */}
       {/* </Link> */}
       <button className='hamburger' onClick={() => {
         setIsNavExpanded(!isNavExpanded);

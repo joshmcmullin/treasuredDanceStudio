@@ -92,15 +92,15 @@ body {
 }
 
 .site-logo {
-    width: 125px;
+    width: 175px;
 }
 
-.site-logo-long {
+/* .site-logo-long {
     width: 300px;
     display: none;
-}
+} */
 
-@media screen and (min-width: 1500px) {
+/* @media screen and (min-width: 1500px) {
 
     .site-logo {
         display: none;
@@ -110,7 +110,7 @@ body {
         display: inherit;
     }
 
-}
+} */
 
 @media screen and (max-width: 768px) {
     .hamburger {
@@ -131,7 +131,6 @@ body {
         left: 10%;
         flex-direction: column;
         width: 80%;
-        height: calc(100vh -77px);
         background-color: white;
     }
 
@@ -167,6 +166,83 @@ body {
         background-color: #EEEEEE;
     }
 
+}
+
+/**************** FOOTER ****************/
+
+.footer {
+    border-top: 3px solid #1B6B53;
+    border-bottom: 3px solid #1B6B53;
+    background-color:#F9E4BB;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    padding: 0.25rem;  
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-social ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    padding: 0.25rem;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright-div {
+    background-color: #1B6B53;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.copyright-div p {
+    margin: 0;
+    color: #AAAAAA;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .footer-content {
+        width: 50%;
+    }
+
+    .footer-links {
+        width: 50%;
+    }
+
+    .footer-social {
+        width: 50%;
+    }
 }
 
 /**************** HOME ****************/
@@ -423,7 +499,7 @@ body {
 
 .class-card-text-div > h2 {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .class-card-text-div > p {

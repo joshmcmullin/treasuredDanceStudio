@@ -36,7 +36,7 @@ function Classes() {
         image={KidsHomeImg}
         heading='Kids Combo'
         content="Kids combo! These classes are so fun for kids ranging in ages 
-                from 2-6. The combo class includes a mixture of ballet and 
+                from 4-6. The combo class includes a mixture of ballet and 
                 acrobatic arts. In these classes students will learn body movement, 
                 pathways, rhythm, and more in a safe and fun learning environment."
       />
