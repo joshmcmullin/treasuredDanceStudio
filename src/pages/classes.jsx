@@ -3,6 +3,7 @@ import ClassCalendar from '../images/ClassCalendar.jpg';
 import BalletHomeImg from '../images/balletHomeImg.JPEG';
 import JazzHomeImg from '../images/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/kidsHomeImg.JPEG';
+import AdultsHomeImg from '../images/adultsHomeImg.jpg';
 import ClassCard from '../components/ClassCard';
 import {Link} from 'react-router-dom';
 
@@ -36,9 +37,18 @@ function Classes() {
         image={KidsHomeImg}
         heading='Kids Combo'
         content="Kids combo! These classes are so fun for kids ranging in ages 
-                from 4-6. The combo class includes a mixture of ballet and 
+                from 2-6. The combo class includes a mixture of ballet and 
                 acrobatic arts. In these classes students will learn body movement, 
                 pathways, rhythm, and more in a safe and fun learning environment."
+      />
+      <ClassCard
+        image={AdultsHomeImg}
+        heading='Adult Dance'
+        content="Adult dance is for those 18+ who want to keep dancing to their hearts
+                content. We will study genres like ballet, jazz, contemporary, and lyrical. 
+                It is our philosophy that dance is for all ages. Each class will start
+                with a body warm up and exercise, move into an across the floor section,
+                and finish with a dance."
       />
       <div className='class-bottom-div'>
         <h2>Ready to get started?</h2>
