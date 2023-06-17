@@ -95,23 +95,6 @@ body {
     width: 175px;
 }
 
-/* .site-logo-long {
-    width: 300px;
-    display: none;
-} */
-
-/* @media screen and (min-width: 1500px) {
-
-    .site-logo {
-        display: none;
-    }
-
-    .site-logo-long {
-        display: inherit;
-    }
-
-} */
-
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -262,6 +245,7 @@ body {
 .home-welcome-content {
     text-align: center;
     margin-bottom: 3rem;
+    font-size: 1.25rem;
 }
 
 .home-studio-img-div {
@@ -277,7 +261,6 @@ body {
 }
 
 .home-hr {
-    /* color: #1B6B53; */
     color: #CA9031;
     border-top: 2px solid;
     margin-top: 3rem;
@@ -327,10 +310,12 @@ body {
 
 .home-class-text {
     font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .home-bottom-div{
-    margin: 8rem auto;
+    margin: 6rem auto;
     text-align: center;
 }
 
@@ -356,11 +341,9 @@ body {
 }
 
 .home-hr-2 {
-    border-top: 2px solid; 
-    /* color: #1B6B53;
-    color: #F9E4BB; */
+    border-top: 2px solid;
     color: #CA9031;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
     margin-right: 10%;
     margin-left: 10%;
@@ -368,6 +351,14 @@ body {
 
 .home-address-div {
     text-align: center;
+}
+
+.home-address-div > h2 {
+    font-size: 2rem;
+}
+
+.home-address-div > p {
+    font-size: 1.25rem;
 }
 
 .home-location-img-div {
@@ -404,6 +395,35 @@ body {
     
     .home-bottom-div {
         margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .home-class-container {
+        flex-direction: column;
+    }
+
+    .home-class-subcontainer {
+        display: flex;
+        margin-right: 0px;
+    }
+
+    .home-class-container > div:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .home-class-img {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .home-class-container {
+        flex-direction: row;
     }
 
 }
@@ -485,6 +505,11 @@ body {
     width: 100%;
 }
 
+.class-intro-text {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+}
+
 .class-card-sub-div {
     display: flex;
     margin-top: 5rem;
@@ -505,7 +530,14 @@ body {
 
 .class-card-text-div > h2 {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.8rem;
+}
+
+.class-card-text-div > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 .class-card-text-div > p {
@@ -601,6 +633,14 @@ body {
 
 /**************** GET STARTED ****************/
 
+.get-started-outer p {
+    font-size: 1.25rem;
+}
+
+.get-started-outer ul {
+    font-size: 1.25rem;
+}
+
 .get-started-contact-div {
     border-style: solid;
     border-width: 0px;
@@ -662,11 +702,17 @@ body {
     margin-top: 4rem;
     margin-bottom: 3rem;
     text-align: center;
+    font-size: 1.75rem;
+}
+
+.get-started-info-div > h3 {
+    font-size: 1.5rem;
 }
 
 .get-started-info-div > p {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
+    font-size: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {

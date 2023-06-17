@@ -4,6 +4,7 @@ import HomeClassCard from '../components/HomeClassCard';
 import BalletHomeImg from '../images/balletHomeImg.JPEG';
 import JazzHomeImg from '../images/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/kidsHomeImg.JPEG';
+import AdultsHomeImg from '../images/adultsHomeImg.jpg';
 import StudioFullImg from '../images/studioFullShot.jpg';
 import LocationImg from '../images/locationMap.png';
 import '../styles.css'
@@ -25,26 +26,40 @@ function Home() {
         <h3>- Our Motto</h3>
       </div>
       <hr className='home-hr'/>
-      <h2 className='home-class-title'>Classes</h2>
+      <h2 className='home-class-title'>Classes We Offer</h2>
       <div className='home-class-container'>
-        <HomeClassCard 
-          name='Ballet/Lyrical'
-          image={BalletHomeImg}
-          alt='Group of ballet dancers posing in black leotards'
-        />
-        <HomeClassCard 
-          name='Jazz/Contemporary'
-          image={JazzHomeImg}
-          alt='Group of 4 pairs of feet posing in contemporary way'
-        />
-        <HomeClassCard 
-          name='Kids Combo'
-          image={KidsHomeImg}
-          alt='Children and instructor in a circle with hands raised cheering'
-        />
+        <div className='home-class-subcontainer'>
+          <HomeClassCard 
+            name='Ballet/Lyrical'
+            image={BalletHomeImg}
+            alt='Group of ballet dancers posing in black leotards'
+          />
+          <HomeClassCard 
+            name='Jazz/Contemporary'
+            image={JazzHomeImg}
+            alt='Group of 4 pairs of feet posing in contemporary way'
+          />
+        </div>
+        <div className='home-class-subcontainer'>
+          <HomeClassCard 
+            name='Kids Combo'
+            image={KidsHomeImg}
+            alt='Children and instructor in a circle with hands raised cheering'
+          />
+          <HomeClassCard
+            name='Adult Dance'
+            image={AdultsHomeImg}
+            alt='Adult dance class'
+          />
+        </div>
       </div>
       <div className='home-bottom-div'>
-        <p>We have classes Monday, Tuesday, Thursday, and Saturday each week.</p>
+        <p>
+          We have classes Monday, Tuesday, Thursday, and Saturday each week. Kids classes start 
+          at $45 a month, and adult classes start at $65 a month. Dancers taking more than one 
+          class or parents enrolling more than one dancer receive discounts. See more about pricing
+          and classes below.
+        </p>
         <Link className='home-bottom-div-link' to='/classes'>Discover Your Class Now</Link>
         <hr className='home-hr-2'></hr>
         <p>Wondering how to get started?</p>

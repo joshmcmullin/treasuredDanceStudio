@@ -4,7 +4,7 @@ import '../styles.css';
 
 function GetStarted() {
   return (
-    <div>
+    <div className='get-started-outer'>
       <h1>Get Started</h1>
       <p>
         To schedule a <strong>FREE</strong> class, call us at  
@@ -13,7 +13,7 @@ function GetStarted() {
       </p>
       <Contact />
       <div className='get-started-info-div'>
-        <h2>Unsure what to wear and bring to class?</h2>
+        <h2>What should you bring to class?</h2>
         <h3>Ballet/Lyrical</h3>
         <ul>
           <li>Leotard of any color</li>
@@ -39,9 +39,16 @@ function GetStarted() {
           <li>Ballet slippers</li>
           <li>Water bottle with name on it</li>
           <li>Hair up and out of face</li>
-      </ul>
+        </ul>
+        <h3>Adult Dance</h3>
+        <ul>
+          <li>Clothes that you can move and feel comfortable in</li>
+          <li>Jazz shoes or ballet slippers</li>
+          <li>Water bottle</li>
+          <li>Hair up and out of face</li>
+        </ul>
       <p>
-        Due to using space at a studio, we <strong>cannot </strong> 
+        Due to using space at a studio, we cannot 
         have bare feet or half-sole shoes. We want to respect the 
         facilities, so please come in proper class attire.
       </p>
