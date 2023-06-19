@@ -5,9 +5,13 @@ import BalletHomeImg from '../images/balletHomeImg.JPEG';
 import JazzHomeImg from '../images/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/kidsHomeImg.JPEG';
 import AdultsHomeImg from '../images/adultsHomeImg.jpg';
-import StudioFullImg from '../images/studioFullShot.jpg';
+import StudioFullShot from '../images/studioFullShot.jpg';
+import StudioFullShot400w from '../images/studioFullShot_400w.jpg';
+import StudioFullShot800w from '../images/studioFullShot_800w.jpg';
+import StudioFullShot1200w from '../images/studioFullShot_1200w.jpg';
 import LocationImg from '../images/locationMap.png';
 import '../styles.css'
+import ResponsiveImage from '../components/ResponsiveImg';
 
 function Home() {
   return (
@@ -18,7 +22,21 @@ function Home() {
         adults and kids ages 2+.
       </p>
       <div className='home-studio-img-div'>
-        <img className='home-studio-img'src={StudioFullImg} alt='The studio'></img>
+        {/* <img className='home-studio-img'src={StudioFullShot} alt='The studio'></img> */}
+        <ResponsiveImage
+          className='home-studio-img'
+          srcSet={`
+            ${StudioFullShot400w} 400w,
+            ${StudioFullShot800w} 800w,
+            ${StudioFullShot1200w} 1200w
+          `}
+          sizes='
+            (max-width: 450px) 400px,
+            (min-width: 451px) and (max-width: 1200px) 800px,
+            (min-width: 1201px) 1200px 
+          '
+          alt='Dance Studio in Meridian'
+        />
       </div>
       <hr className='home-hr'/>
       <div className='home-motto-div'>

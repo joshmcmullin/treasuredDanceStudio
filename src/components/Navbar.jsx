@@ -31,10 +31,7 @@ function Navbar() {
 
   return (
     <nav className='nav' ref={navbarRef}>
-      {/* <Link to='/' className='site-title'> */}
-        <img className='site-logo' src={SiteLogo2} alt='Treasured Dance Logo'/>
-        {/* <img className='site-logo-long' src={LongLogo} alt='Treasured Dance Logo' /> */}
-      {/* </Link> */}
+      <img className='site-logo' src={SiteLogo2} alt='Treasured Dance Logo'/>
       <button className='hamburger' onClick={() => {
         setIsNavExpanded(!isNavExpanded);
       }}>
