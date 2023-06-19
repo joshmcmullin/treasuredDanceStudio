@@ -6,9 +6,14 @@ import JazzHomeImg from '../images/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/kidsHomeImg.JPEG';
 import AdultsHomeImg from '../images/adultsHomeImg.jpg';
 import StudioFullShot from '../images/studioFullShot.jpg';
-import StudioFullShot400w from '../images/studioFullShot_400w.jpg';
-import StudioFullShot800w from '../images/studioFullShot_800w.jpg';
-import StudioFullShot1200w from '../images/studioFullShot_1200w.jpg';
+import StudioFullShot256w from '../images/studioFullShot_256w.jpg';
+import StudioFullShot840w from '../images/studioFullShot_840w.jpg';
+import StudioFullShot1160w from '../images/studioFullShot_1160w.jpg';
+import StudioFullShot1400w from '../images/studioFullShot_1400w.jpg';
+import StudioFullShot1610w from '../images/studioFullShot_1610w.jpg';
+import StudioFullShot1800w from '../images/studioFullShot_1800w.jpg';
+import StudioFullShot1930w from '../images/studioFullShot_1930w.jpg';
+import StudioFullShot2048w from '../images/studioFullShot_2048w.jpg';
 import LocationImg from '../images/locationMap.png';
 import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
@@ -23,7 +28,7 @@ function Home() {
       </p>
       <div className='home-studio-img-div'>
         {/* <img className='home-studio-img'src={StudioFullShot} alt='The studio'></img> */}
-        <ResponsiveImage
+        {/* <ResponsiveImage
           className='home-studio-img'
           srcSet={`
             ${StudioFullShot400w} 400w,
@@ -35,6 +40,26 @@ function Home() {
             (min-width: 451px) and (max-width: 1200px) 800px,
             (min-width: 1201px) 1200px 
           '
+          alt='Dance Studio in Meridian'
+        /> */}
+        <ResponsiveImage
+          className='home-studio-img'
+          srcSet={`
+            ${StudioFullShot256w} 256w,
+            ${StudioFullShot840w} 840w,
+            ${StudioFullShot1160w} 1160w,
+            ${StudioFullShot1400w} 1400w,
+            ${StudioFullShot1610w} 1610w,
+            ${StudioFullShot1800w} 1800w,
+            ${StudioFullShot1930w} 1930w,
+            ${StudioFullShot2048w} 2048w
+          `}
+          sizes='
+            (min-width: 1560px) 60vw,
+            (min-width: 1200px) 70vw,
+            80vw 
+          '
+          src={StudioFullShot}
           alt='Dance Studio in Meridian'
         />
       </div>

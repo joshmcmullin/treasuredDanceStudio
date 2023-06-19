@@ -6,6 +6,7 @@ const ResponsiveImage = ({className, srcSet, sizes, src, alt}) => {
       className={className}
       srcSet={srcSet}
       sizes={sizes}
+      src={src}
       alt={alt}
     />
   )
