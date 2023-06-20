@@ -254,7 +254,8 @@ body {
     margin-top: 2rem;
 }
 
-.home-studio-img {
+.home-studio-img-div picture,
+.home-studio-img-div img {
     width: 100%;
     height: 400px;
     object-fit: cover;

@@ -5,6 +5,7 @@ import BalletHomeImg from '../images/balletHomeImg.JPEG';
 import JazzHomeImg from '../images/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/kidsHomeImg.JPEG';
 import AdultsHomeImg from '../images/adultsHomeImg.jpg';
+/* JPG Images */
 import StudioFullShot from '../images/studioFullShot.jpg';
 import StudioFullShot256w from '../images/studioFullShot_256w.jpg';
 import StudioFullShot840w from '../images/studioFullShot_840w.jpg';
@@ -14,6 +15,24 @@ import StudioFullShot1610w from '../images/studioFullShot_1610w.jpg';
 import StudioFullShot1800w from '../images/studioFullShot_1800w.jpg';
 import StudioFullShot1930w from '../images/studioFullShot_1930w.jpg';
 import StudioFullShot2048w from '../images/studioFullShot_2048w.jpg';
+/* AVIF Images */
+import StudioFullShot256wAVIF from '../images/studioFullShot_256w_AVIF.avif';
+import StudioFullShot840wAVIF from '../images/studioFullShot_840w_AVIF.avif';
+import StudioFullShot1160wAVIF from '../images/studioFullShot_1160w_AVIF.avif';
+import StudioFullShot1400wAVIF from '../images/studioFullShot_1400w_AVIF.avif';
+import StudioFullShot1610wAVIF from '../images/studioFullShot_1610w_AVIF.avif';
+import StudioFullShot1800wAVIF from '../images/studioFullShot_1800w_AVIF.avif';
+import StudioFullShot1930wAVIF from '../images/studioFullShot_1930w_AVIF.avif';
+import StudioFullShot2048wAVIF from '../images/studioFullShot_2048w_AVIF.avif';
+/* WEBP Images */
+import StudioFullShot256wWEBP from '../images/studioFullShot_256w_WEBP.webp';
+import StudioFullShot840wWEBP from '../images/studioFullShot_840w_WEBP.webp';
+import StudioFullShot1160wWEBP from '../images/studioFullShot_1160w_WEBP.webp';
+import StudioFullShot1400wWEBP from '../images/studioFullShot_1400w_WEBP.webp';
+import StudioFullShot1610wWEBP from '../images/studioFullShot_1610w_WEBP.webp';
+import StudioFullShot1800wWEBP from '../images/studioFullShot_1800w_WEBP.webp';
+import StudioFullShot1930wWEBP from '../images/studioFullShot_1930w_WEBP.webp';
+import StudioFullShot2048wWEBP from '../images/studioFullShot_2048w_WEBP.webp';
 import LocationImg from '../images/locationMap.png';
 import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
@@ -26,43 +45,36 @@ function Home() {
         A premier dance studio located in Meridian, Idaho offering dance classes for 
         adults and kids ages 2+.
       </p>
-      <div className='home-studio-img-div'>
-        {/* <img className='home-studio-img'src={StudioFullShot} alt='The studio'></img> */}
-        {/* <ResponsiveImage
-          className='home-studio-img'
-          srcSet={`
-            ${StudioFullShot400w} 400w,
-            ${StudioFullShot800w} 800w,
-            ${StudioFullShot1200w} 1200w
-          `}
-          sizes='
-            (max-width: 450px) 400px,
-            (min-width: 451px) and (max-width: 1200px) 800px,
-            (min-width: 1201px) 1200px 
-          '
-          alt='Dance Studio in Meridian'
-        /> */}
         <ResponsiveImage
-          className='home-studio-img'
-          srcSet={`
-            ${StudioFullShot256w} 256w,
-            ${StudioFullShot840w} 840w,
-            ${StudioFullShot1160w} 1160w,
-            ${StudioFullShot1400w} 1400w,
-            ${StudioFullShot1610w} 1610w,
-            ${StudioFullShot1800w} 1800w,
-            ${StudioFullShot1930w} 1930w,
-            ${StudioFullShot2048w} 2048w
+          className='home-studio-img-div'
+          avifSrcSet={`
+            ${StudioFullShot256wAVIF} 256w,
+            ${StudioFullShot840wAVIF} 840w,
+            ${StudioFullShot1160wAVIF} 1160w,
+            ${StudioFullShot1400wAVIF} 1400w,
+            ${StudioFullShot1610wAVIF} 1610w,
+            ${StudioFullShot1800wAVIF} 1800w,
+            ${StudioFullShot1930wAVIF} 1930w,
+            ${StudioFullShot2048wAVIF} 2048w
           `}
-          sizes='
+          webpSrcSet={`
+            ${StudioFullShot256wWEBP} 256w,
+            ${StudioFullShot840wWEBP} 840w,
+            ${StudioFullShot1160wWEBP} 1160w,
+            ${StudioFullShot1400wWEBP} 1400w,
+            ${StudioFullShot1610wWEBP} 1610w,
+            ${StudioFullShot1800wWEBP} 1800w,
+            ${StudioFullShot1930wWEBP} 1930w,
+            ${StudioFullShot2048wWEBP} 2048w
+          `}
+          sizes="
             (min-width: 1560px) 60vw,
             (min-width: 1200px) 70vw,
             80vw 
-          '
+          "
           src={StudioFullShot}
           alt='Dance Studio in Meridian'
         />
-      </div>
       <hr className='home-hr'/>
       <div className='home-motto-div'>
         <h2>I am Treasured. You are Treasured. We are Treasured.</h2>
