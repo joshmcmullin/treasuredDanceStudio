@@ -1,9 +1,9 @@
 import React from 'react';
 import ClassCalendar from '../images/ClassCalendar.jpg';
-import BalletHomeImg from '../images/balletHomeImg.JPEG';
-import JazzHomeImg from '../images/jazzHomeImg.JPEG';
-import KidsHomeImg from '../images/kidsHomeImg.JPEG';
-import AdultsHomeImg from '../images/adultsHomeImg.jpg';
+import BalletHomeImg from '../images/home/balletHomeImg.JPEG';
+import JazzHomeImg from '../images/home/jazzHomeImg.JPEG';
+import KidsHomeImg from '../images/home/kidsHomeImg.JPEG';
+import AdultsHomeImg from '../images/home/adultsHomeImg.jpg';
 import ClassCard from '../components/ClassCard';
 import {Link} from 'react-router-dom';
 

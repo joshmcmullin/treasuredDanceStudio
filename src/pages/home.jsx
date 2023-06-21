@@ -1,41 +1,55 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import HomeClassCard from '../components/HomeClassCard';
-import BalletHomeImg from '../images/balletHomeImg.JPEG';
-import JazzHomeImg from '../images/jazzHomeImg.JPEG';
-import KidsHomeImg from '../images/kidsHomeImg.JPEG';
-import AdultsHomeImg from '../images/adultsHomeImg.jpg';
-/* JPG Images */
-import StudioFullShot from '../images/studioFullShot.jpg';
-import StudioFullShot256w from '../images/studioFullShot_256w.jpg';
-import StudioFullShot840w from '../images/studioFullShot_840w.jpg';
-import StudioFullShot1160w from '../images/studioFullShot_1160w.jpg';
-import StudioFullShot1400w from '../images/studioFullShot_1400w.jpg';
-import StudioFullShot1610w from '../images/studioFullShot_1610w.jpg';
-import StudioFullShot1800w from '../images/studioFullShot_1800w.jpg';
-import StudioFullShot1930w from '../images/studioFullShot_1930w.jpg';
-import StudioFullShot2048w from '../images/studioFullShot_2048w.jpg';
-/* AVIF Images */
-import StudioFullShot256wAVIF from '../images/studioFullShot_256w_AVIF.avif';
-import StudioFullShot840wAVIF from '../images/studioFullShot_840w_AVIF.avif';
-import StudioFullShot1160wAVIF from '../images/studioFullShot_1160w_AVIF.avif';
-import StudioFullShot1400wAVIF from '../images/studioFullShot_1400w_AVIF.avif';
-import StudioFullShot1610wAVIF from '../images/studioFullShot_1610w_AVIF.avif';
-import StudioFullShot1800wAVIF from '../images/studioFullShot_1800w_AVIF.avif';
-import StudioFullShot1930wAVIF from '../images/studioFullShot_1930w_AVIF.avif';
-import StudioFullShot2048wAVIF from '../images/studioFullShot_2048w_AVIF.avif';
-/* WEBP Images */
-import StudioFullShot256wWEBP from '../images/studioFullShot_256w_WEBP.webp';
-import StudioFullShot840wWEBP from '../images/studioFullShot_840w_WEBP.webp';
-import StudioFullShot1160wWEBP from '../images/studioFullShot_1160w_WEBP.webp';
-import StudioFullShot1400wWEBP from '../images/studioFullShot_1400w_WEBP.webp';
-import StudioFullShot1610wWEBP from '../images/studioFullShot_1610w_WEBP.webp';
-import StudioFullShot1800wWEBP from '../images/studioFullShot_1800w_WEBP.webp';
-import StudioFullShot1930wWEBP from '../images/studioFullShot_1930w_WEBP.webp';
-import StudioFullShot2048wWEBP from '../images/studioFullShot_2048w_WEBP.webp';
-import LocationImg from '../images/locationMap.png';
 import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
+/* JPG, JPEG, PNG Images */
+import StudioFullShot from '../images/home/studioFullShot.jpg';
+import BalletHomeImg from '../images/home/balletHomeImg.JPEG';
+import JazzHomeImg from '../images/home/jazzHomeImg.JPEG';
+import KidsHomeImg from '../images/home/kidsHomeImg.JPEG';
+import AdultsHomeImg from '../images/home/adultsHomeImg.jpg';
+import LocationImg from '../images/home/locationMap.png';
+/* AVIF Images */
+import StudioFullShot256wAVIF from '../images/home/studioFullShot_256w_AVIF.avif';
+import StudioFullShot840wAVIF from '../images/home/studioFullShot_840w_AVIF.avif';
+import StudioFullShot1160wAVIF from '../images/home/studioFullShot_1160w_AVIF.avif';
+import StudioFullShot1400wAVIF from '../images/home/studioFullShot_1400w_AVIF.avif';
+import StudioFullShot1610wAVIF from '../images/home/studioFullShot_1610w_AVIF.avif';
+import StudioFullShot1800wAVIF from '../images/home/studioFullShot_1800w_AVIF.avif';
+import StudioFullShot1930wAVIF from '../images/home/studioFullShot_1930w_AVIF.avif';
+import StudioFullShot2048wAVIF from '../images/home/studioFullShot_2048w_AVIF.avif';
+import BalletHomeImgAVIF from '../images/home/balletHomeImg.avif';
+import JazzHomeImgAVIF from '../images/home/jazzHomeImg.avif';
+import KidsHomeImgAVIF from '../images/home/kidsHomeImg.avif';
+import AdultsHomeImgAVIF from '../images/home/adultsHomeImg.avif';
+import LocationImg256wAVIF from '../images/home/locationMap_256w.avif';
+import LocationImg890wAVIF from '../images/home/locationMap_890w.avif';
+import LocationImg1235wAVIF from '../images/home/locationMap_1235w.avif';
+import LocationImg1540wAVIF from '../images/home/locationMap_1540w.avif';
+import LocationImg1800wAVIF from '../images/home/locationMap_1800w.avif';
+import LocationImg1930wAVIF from '../images/home/locationMap_1930w.avif';
+import LocationImg2048wAVIF from '../images/home/locationMap_2048w.avif';
+/* WEBP Images */
+import StudioFullShot256wWEBP from '../images/home/studioFullShot_256w_WEBP.webp';
+import StudioFullShot840wWEBP from '../images/home/studioFullShot_840w_WEBP.webp';
+import StudioFullShot1160wWEBP from '../images/home/studioFullShot_1160w_WEBP.webp';
+import StudioFullShot1400wWEBP from '../images/home/studioFullShot_1400w_WEBP.webp';
+import StudioFullShot1610wWEBP from '../images/home/studioFullShot_1610w_WEBP.webp';
+import StudioFullShot1800wWEBP from '../images/home/studioFullShot_1800w_WEBP.webp';
+import StudioFullShot1930wWEBP from '../images/home/studioFullShot_1930w_WEBP.webp';
+import StudioFullShot2048wWEBP from '../images/home/studioFullShot_2048w_WEBP.webp';
+import LocationImg256wWEBP from '../images/home/locationMap_256w.webp';
+import LocationImg890wWEBP from '../images/home/locationMap_890w.webp';
+import LocationImg1235wWEBP from '../images/home/locationMap_1235w.webp';
+import LocationImg1540wWEBP from '../images/home/locationMap_1540w.webp';
+import LocationImg1800wWEBP from '../images/home/locationMap_1800w.webp';
+import LocationImg1930wWEBP from '../images/home/locationMap_1930w.webp';
+import LocationImg2048wWEBP from '../images/home/locationMap_2048w.webp';
+import BalletHomeImgWEBP from '../images/home/balletHomeImg.webp';
+import JazzHomeImgWEBP from '../images/home/jazzHomeImg.webp';
+import KidsHomeImgWEBP from '../images/home/kidsHomeImg.webp';
+import AdultsHomeImgWEBP from '../images/home/adultsHomeImg.webp';
 
 function Home() {
   return (
@@ -45,8 +59,8 @@ function Home() {
         A premier dance studio located in Meridian, Idaho offering dance classes for 
         adults and kids ages 2+.
       </p>
+      <div className='home-studio-img-div'>
         <ResponsiveImage
-          className='home-studio-img-div'
           avifSrcSet={`
             ${StudioFullShot256wAVIF} 256w,
             ${StudioFullShot840wAVIF} 840w,
@@ -75,6 +89,7 @@ function Home() {
           src={StudioFullShot}
           alt='Dance Studio in Meridian'
         />
+      </div>
       <hr className='home-hr'/>
       <div className='home-motto-div'>
         <h2>I am Treasured. You are Treasured. We are Treasured.</h2>
@@ -88,11 +103,17 @@ function Home() {
             name='Ballet/Lyrical'
             image={BalletHomeImg}
             alt='Group of ballet dancers posing in black leotards'
+            avifSrcSet={`${BalletHomeImgAVIF} 540w`}
+            webpSrcSet={`${BalletHomeImgWEBP} 540w`}
+            sizes="540px"
           />
           <HomeClassCard 
             name='Jazz/Contemporary'
             image={JazzHomeImg}
             alt='Group of 4 pairs of feet posing in contemporary way'
+            avifSrcSet={`${JazzHomeImgAVIF} 540w`}
+            webpSrcSet={`${JazzHomeImgWEBP} 540w`}
+            sizes="540px"
           />
         </div>
         <div className='home-class-subcontainer'>
@@ -100,11 +121,17 @@ function Home() {
             name='Kids Combo'
             image={KidsHomeImg}
             alt='Children and instructor in a circle with hands raised cheering'
+            avifSrcSet={`${KidsHomeImgAVIF} 540w`}
+            webpSrcSet={`${KidsHomeImgWEBP} 540w`}
+            sizes="540px"
           />
           <HomeClassCard
             name='Adult Dance'
             image={AdultsHomeImg}
             alt='Adult dance class'
+            avifSrcSet={`${AdultsHomeImgAVIF} 540w`}
+            webpSrcSet={`${AdultsHomeImgWEBP} 540w`}
+            sizes="540px"
           />
         </div>
       </div>
@@ -130,11 +157,33 @@ function Home() {
         </p>
       </div>
       <div className='home-location-img-div'>
-        <img 
+        <ResponsiveImage 
+          avifSrcSet={`
+            ${LocationImg256wAVIF} 256w,
+            ${LocationImg890wAVIF} 890w,
+            ${LocationImg1235wAVIF} 1235w,
+            ${LocationImg1540wAVIF} 1540w,
+            ${LocationImg1800wAVIF} 1800w,
+            ${LocationImg1930wAVIF} 1930w,
+            ${LocationImg2048wAVIF} 2048w
+          `}
+          webpSrcSet={`
+            ${LocationImg256wWEBP} 256w,
+            ${LocationImg890wWEBP} 890w,
+            ${LocationImg1235wWEBP} 1235w,
+            ${LocationImg1540wWEBP} 1540w,
+            ${LocationImg1800wWEBP} 1800w,
+            ${LocationImg1930wWEBP} 1930w,
+            ${LocationImg2048wWEBP} 2048w
+          `}
+          sizes="
+            (min-width: 1560px) 60vw,
+            (min-width: 1200px) 70vw,
+            80vw 
+          "
           src={LocationImg}
-          alt='Location of studio'
-          className='home-location-img'
-        ></img>
+          alt='Dance studio located in Meridian, Idaho'
+        />
       </div>
     </div>
   )

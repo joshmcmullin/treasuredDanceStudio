@@ -1,10 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react';
-import {Link} from 'react-router-dom';
 import CustomLink from './CustomLink';
-import SiteLogo from '../images/logoFullShot.jpg';
-import SiteLogo2 from '../images/logoFullShot2.jpg';
-import LongLogo from '../images/logoLong.png';
-import HamburgerIcon from '../images/hamburgerIcon.png';
+import SiteLogo from '../images/navbar/logoFullShot2.jpg';
+import SiteLogoAVIF from '../images/navbar/logoFullShot2.avif';
+import SiteLogoWEBP from '../images/navbar/logoFullShot2.webp';
+import HamburgerIcon from '../images/navbar/hamburgerIcon_80w.png';
+import HamburgerIconWEBP from '../images/navbar/hamburgerIcon_80w.webp';
+import HamburgerIconAVIF from '../images/navbar/hamburgerIcon_80w.avif';
+import ResponsiveImage from './ResponsiveImg';
 
 function Navbar() {
 
@@ -31,11 +33,35 @@ function Navbar() {
 
   return (
     <nav className='nav' ref={navbarRef}>
-      <img className='site-logo' src={SiteLogo2} alt='Treasured Dance Logo'/>
+      <ResponsiveImage 
+          avifSrcSet={`
+            ${SiteLogoAVIF} 451w
+          `}
+          webpSrcSet={`
+            ${SiteLogoWEBP} 451w
+          `}
+          sizes="
+            451px
+          "
+          src={SiteLogo}
+          alt='Treasured Dance Studio'
+        />
       <button className='hamburger' onClick={() => {
         setIsNavExpanded(!isNavExpanded);
       }}>
-        <img className='hamburger-icon' src={HamburgerIcon} alt='hamburger icon'></img>
+        <ResponsiveImage 
+          avifSrcSet={`
+            ${HamburgerIconAVIF} 80w
+          `}
+          webpSrcSet={`
+            ${HamburgerIconWEBP} 80w
+          `}
+          sizes="
+            80px
+          "
+          src={HamburgerIcon}
+          alt='Navbar hamburger icon'
+        />
       </button>
       <div className={isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'}>
         <ul>
