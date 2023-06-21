@@ -79,7 +79,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: 25px;
+    right: 0px;
     transform: translateY(-50%);
     display: none;
 }
