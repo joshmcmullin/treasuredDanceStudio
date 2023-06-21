@@ -4,8 +4,8 @@ import SiteLogo from '../images/navbar/logoFullShot2.jpg';
 import SiteLogoAVIF from '../images/navbar/logoFullShot2.avif';
 import SiteLogoWEBP from '../images/navbar/logoFullShot2.webp';
 import HamburgerIcon from '../images/navbar/hamburgerIcon_80w.png';
-import HamburgerIconWEBP from '../images/navbar/hamburgerIcon_80w.webp';
-import HamburgerIconAVIF from '../images/navbar/hamburgerIcon_80w.avif';
+// import HamburgerIconWEBP from '../images/navbar/hamburgerIcon_80w.webp';
+// import HamburgerIconAVIF from '../images/navbar/hamburgerIcon_80w.avif';
 import ResponsiveImage from './ResponsiveImg';
 
 function Navbar() {
@@ -49,7 +49,7 @@ function Navbar() {
       <button className='hamburger' onClick={() => {
         setIsNavExpanded(!isNavExpanded);
       }}>
-        <ResponsiveImage 
+        {/* <ResponsiveImage 
           avifSrcSet={`
             ${HamburgerIconAVIF} 80w
           `}
@@ -61,7 +61,8 @@ function Navbar() {
           "
           src={HamburgerIcon}
           alt='Navbar hamburger icon'
-        />
+        /> */}
+        <img src={HamburgerIcon} alt='Navbar hamburger icon'></img>
       </button>
       <div className={isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'}>
         <ul>
