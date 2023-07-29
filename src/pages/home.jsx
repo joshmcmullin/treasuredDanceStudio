@@ -10,6 +10,7 @@ import JazzHomeImg from '../images/home/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/home/kidsHomeImg.JPEG';
 import AdultsHomeImg from '../images/home/adultsHomeImg.jpg';
 import LocationImg from '../images/home/locationMap.png';
+import LyricalHomeImg from '../images/home/lyricalHomeImg.png';
 /* AVIF Images */
 import StudioFullShot256wAVIF from '../images/home/studioFullShot_256w_AVIF.avif';
 import StudioFullShot840wAVIF from '../images/home/studioFullShot_840w_AVIF.avif';
@@ -23,6 +24,7 @@ import BalletHomeImgAVIF from '../images/home/balletHomeImg.avif';
 import JazzHomeImgAVIF from '../images/home/jazzHomeImg.avif';
 import KidsHomeImgAVIF from '../images/home/kidsHomeImg.avif';
 import AdultsHomeImgAVIF from '../images/home/adultsHomeImg.avif';
+//import LyricalHomeImgAVIF from '../images/home/lyricalHomeImg.avif;'
 import LocationImg256wAVIF from '../images/home/locationMap_256w.avif';
 import LocationImg890wAVIF from '../images/home/locationMap_890w.avif';
 import LocationImg1235wAVIF from '../images/home/locationMap_1235w.avif';
@@ -50,6 +52,7 @@ import BalletHomeImgWEBP from '../images/home/balletHomeImg.webp';
 import JazzHomeImgWEBP from '../images/home/jazzHomeImg.webp';
 import KidsHomeImgWEBP from '../images/home/kidsHomeImg.webp';
 import AdultsHomeImgWEBP from '../images/home/adultsHomeImg.webp';
+import LyricalHomeImgWEBP from '../images/home/lyricalHomeImg.webp';
 
 function Home() {
   return (
@@ -57,7 +60,7 @@ function Home() {
       <h1 className='home-welcome-text'>Welcome to Treasured Dance Studio!</h1>
       <p className='home-welcome-content'>
         A premier dance studio located in Meridian, Idaho offering dance classes for 
-        adults and kids ages 2+.
+        adults and kids ages 3+.
       </p>
       <div className='home-studio-img-div'>
         <ResponsiveImage
@@ -100,7 +103,7 @@ function Home() {
       <div className='home-class-container'>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Ballet/Lyrical'
+            name='Ballet'
             image={BalletHomeImg}
             alt='Group of ballet dancers posing in black leotards'
             avifSrcSet={`${BalletHomeImgAVIF} 540w`}
@@ -108,7 +111,7 @@ function Home() {
             sizes="540px"
           />
           <HomeClassCard 
-            name='Jazz/Contemporary'
+            name='Jazz'
             image={JazzHomeImg}
             alt='Group of 4 pairs of feet posing in contemporary way'
             avifSrcSet={`${JazzHomeImgAVIF} 540w`}
@@ -126,11 +129,11 @@ function Home() {
             sizes="540px"
           />
           <HomeClassCard
-            name='Adult Dance'
-            image={AdultsHomeImg}
-            alt='Adult dance class'
-            avifSrcSet={`${AdultsHomeImgAVIF} 540w`}
-            webpSrcSet={`${AdultsHomeImgWEBP} 540w`}
+            name='Lyrical/Contemporary'
+            image={LyricalHomeImg}
+            alt='Lyrical/Contemporary class'
+            //avifSrcSet={`${AdultsHomeImgAVIF} 540w`}
+            webpSrcSet={`${LyricalHomeImgWEBP} 540w`}
             sizes="540px"
           />
         </div>

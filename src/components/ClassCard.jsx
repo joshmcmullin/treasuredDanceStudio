@@ -10,7 +10,8 @@ function ClassCard(props) {
         <h2>{props.heading}</h2>
         <h3>Ages {props.age}</h3>
         <h3>{props.price}</h3>
-        <h3>{props.time}</h3>
+        <h3>{props.firstTime}</h3>
+        <h3>{props.secondTime}</h3>
         <p>{props.content}</p>
       </div>    
     </div>

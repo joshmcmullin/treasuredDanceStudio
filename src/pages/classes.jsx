@@ -4,6 +4,7 @@ import BalletHomeImg from '../images/home/balletHomeImg.JPEG';
 import JazzHomeImg from '../images/home/jazzHomeImg.JPEG';
 import KidsHomeImg from '../images/home/kidsHomeImg.JPEG';
 import AdultsHomeImg from '../images/home/adultsHomeImg.jpg';
+import LyricalHomeImg from '../images/home/lyricalHomeImg.png'
 import ClassCard from '../components/ClassCard';
 import {Link} from 'react-router-dom';
 
@@ -19,23 +20,24 @@ function Classes() {
       </p>
       <ClassCard 
         image={BalletHomeImg}
-        heading='Ballet/Lyrical'
+        heading='Ballet'
         age='7+'
         price='$65 per month'
-        time='Monday 7:30 - 8:30pm'
-        content="Ballet is a core foundation for other dance styles. Here at 
-                Treasured Dance Studio we will use several ballet terms and guidelines 
-                to help our students gain the knowledge they need to succeed in dance. 
-                The flow of the class is such: Start at the barre, add in strenghtening, 
-                center work, and finally a dance implementing what was learned in class 
-                that day."
+        firstTime='Pre/Teens - Mon 7:30 - 8:30pm'
+        secondTime='Adults - Thurs 8:35 - 9:35pm'
+        content="Ballet is the core foundation for other dance styles. Here at Treasured
+                Dance Studio we will use several ballet terms and guidelines to help our
+                students gain the knowledge they need to succeed in dance. The flow of the 
+                class is such: Start at the barre, add in strengthening and center work, 
+                small jumps and little jumps."
       />
       <ClassCard 
         image={JazzHomeImg}
-        heading='Jazz/Contemporary'
+        heading='Jazz'
         age='7+'
         price='$65 per month'
-        time='Tuesday 7:30 - 8:30pm'
+        firstTime='Pre/Teens - Tues 7:30 - 8:30pm'
+        secondTime='Adults - Tues 8:35 - 9:35pm'
         content="Jazz is all about energy, variety, and strength. We
                 pair contemporary with jazz so dancers can learn 
                 necessary variety through floor work, standing, isolation,
@@ -47,25 +49,27 @@ function Classes() {
       <ClassCard 
         image={KidsHomeImg}
         heading='Kids Combo'
-        age='2-6'
-        price='$45 or 55 per month (2-3 or 4-6)'
-        time='Saturday 11:30am - 12:30pm'
+        age='3-6'
+        price='$45 or 55 per month (3 or 4-6)'
+        firstTime='Saturday 11:30am - 12:30pm'
         content="Kids combo! These classes are so fun for kids ranging in ages 
-                from 2-6. The combo class includes a mixture of ballet and 
+                from 3-6. The combo class includes a mixture of ballet and 
                 acrobatic arts. In these classes students will learn body movement, 
                 pathways, rhythm, and more in a safe and fun learning environment."
       />
       <ClassCard
-        image={AdultsHomeImg}
-        heading='Adult Dance'
-        age='18+'
+        image={LyricalHomeImg}
+        heading='Lyrical/Contemporary'
+        age='7+'
         price='$65 per month'
-        time='Thursday 7:30 - 8:30pm'
-        content="Adult dance is for those 18+ who want to keep dancing to their hearts
-                content. We will study genres like ballet, jazz, contemporary, and lyrical. 
-                It is our philosophy that dance is for all ages. Each class will start
-                with a body warm up and exercise, move into an across the floor section,
-                and finish with a dance."
+        firstTime='Pre/Teens - Thurs 7:30 - 8:30pm'
+        secondTime='Adults - Mon 8:35 - 9:35pm'
+        content="This is an expressive dance class where we take the smoothness of ballet
+                mixed with the sharpness of jazz. This class will dive into emotions and 
+                creating with our body. Due to the class taking a mixture of both ballet 
+                and jazz, we recommend students in this class also be in either ballet or jazz.
+                 The structure of this class is such: full-body warm up, strengthening, 
+                 improv, center and floor work, and a dance."
       />
       <div className='class-bottom-div'>
         <h2>Ready to get started?</h2>

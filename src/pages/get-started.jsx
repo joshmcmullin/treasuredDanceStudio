@@ -5,16 +5,17 @@ import '../styles.css';
 function GetStarted() {
   return (
     <div className='get-started-outer'>
-      <h1>Get Started</h1>
+      {/* <h1>Get Started</h1> */}
+      <h1>Are you ready to get your body moving and creativity flowing?</h1>
       <p>
-        To schedule a <strong>FREE</strong> class, call us at  
-         (208) 617-4118 or fill out the
-        form below and we will give you a call!
+        Schedule a <strong>FREE</strong> week long trial to see which class
+        or classes are best for you! Call/text (we love text) us at (208) 617-4118
+        or fill in the info below and we will give you a call!
       </p>
       <Contact />
       <div className='get-started-info-div'>
         <h2>What should you bring to class?</h2>
-        <h3>Ballet/Lyrical</h3>
+        <h3>Ballet</h3>
         <ul>
           <li>Leotard of any color</li>
           <li>Tights</li>
@@ -24,11 +25,11 @@ function GetStarted() {
           <li>Hair up and out of face</li>
           <li>Water bottle</li>
         </ul>
-        <h3>Jazz/Contemporary</h3>
+        <h3>Jazz/Lyrical/Contemporary</h3>
         <ul>
           <li>Leggings</li>
           <li>Shirt or tank that you can move in</li>
-          <li>Jazz shoes</li>
+          <li>Jazz shoes or ballet slippers</li>
           <li>Hair up and out of face</li>
           <li>Water bottle</li>
         </ul>
@@ -38,13 +39,6 @@ function GetStarted() {
           <li>Tights are optional with a leotard</li>
           <li>Ballet slippers</li>
           <li>Water bottle with name on it</li>
-          <li>Hair up and out of face</li>
-        </ul>
-        <h3>Adult Dance</h3>
-        <ul>
-          <li>Clothes that you can move and feel comfortable in</li>
-          <li>Jazz shoes or ballet slippers</li>
-          <li>Water bottle</li>
           <li>Hair up and out of face</li>
         </ul>
       <p>

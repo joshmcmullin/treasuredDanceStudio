@@ -8,7 +8,8 @@ function Contact() {
     user_first_name: '',
     user_last_name: '',
     user_email: '',
-    user_phone: ''
+    user_phone: '',
+    preferred_contact_method: ''
   });
 
   const sendEmail = (e) => {
@@ -19,6 +20,7 @@ function Contact() {
       !inputValue.user_last_name ||
       !inputValue.user_email ||
       !inputValue.user_phone ||
+      !inputValue.preferred_contact_method ||
       inputValue.user_phone.length !== 10
     ) {
       window.alert('Please fill in all required fields and provide a 10 digit phone number.');
@@ -40,7 +42,7 @@ function Contact() {
             user_email: '',
             user_phone: ''
           })
-          window.alert("Message sent successfully!");
+          window.alert("WOO! You're one step closer! We will be contacting you shortly to get this trial set up. Talk soon!");
       }, (error) => {
           console.log(error.text);
       });
@@ -83,6 +85,14 @@ function Contact() {
           value={inputValue.user_phone}
           onChange={handleChange}
         />
+        <label className='get-started-required-field'>Preferred Method of Contact</label>
+        <input 
+          type="text" 
+          name="preferred_contact_method"
+          placeholder='phone, email, text'
+          value={inputValue.preferred_contact_method}
+          onChange={handleChange}
+        />
         <label>Message</label>
         <textarea 
           name="message"
@@ -90,7 +100,7 @@ function Contact() {
         <input 
           className='get-started-submit' 
           type="submit" 
-          value="Send Message" 
+          value="Get your free trial today!" 
         />
       </form>
     </div>
