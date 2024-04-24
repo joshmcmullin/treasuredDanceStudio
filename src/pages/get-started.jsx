@@ -1,15 +1,29 @@
 import React from 'react';
 import Contact from '../components/Contact';
+import Slider from '../components/Slider';
 import '../styles.css';
+import BalletImg from '../images/get-started/balletImg.jpg';
+import HipHopImg from '../images/get-started/hiphopImg.jpg';
+import JazzImg from '../images/get-started/jazzImg.jpg';
+import KidsImg from '../images/get-started/kidsImg.jpg';
+import LyricalImg from '../images/get-started/lyricalImg.jpg';
 
 function GetStarted() {
+  const images = [
+    BalletImg,
+    HipHopImg,
+    JazzImg,
+    KidsImg,
+    LyricalImg
+  ];
   return (
     <div className='get-started-outer'>
       {/* <h1>Get Started</h1> */}
       <h1>Are you ready to get your body moving and creativity flowing?</h1>
+      <Slider images={images} />
       <p>
         Schedule a <strong>FREE</strong> week long trial to see which class
-        or classes are best for you! Call/text (we love text) us at (208) 617-4118
+        or classes are best for you! Call/text (we love text) us at (208) 617-4119
         or fill in the info below and we will give you a call!
       </p>
       <Contact />

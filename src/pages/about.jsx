@@ -1,6 +1,9 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
-import MissEmilyImg from '../images/missEmily.jpg';
+import MissEmilyImg from '../images/about/emilyImg.jpg';
+import MissHannahImg from '../images/about/hannahImg.jpg';
+import MissKaitlynImg from '../images/about/kaitlynImg.jpg';
+import MissLaurenImg from '../images/about/laurenImg.jpg';
 import FullLogoImg from '../images/FullLogo.PNG';
 import '../styles.css';
 
@@ -21,6 +24,43 @@ function About() {
                 Opening a studio has been a goal of Emily's and bringing
                 Treasured Dance Studio to light has brought her tremendous
                 joy."
+      />
+      <AboutSection
+        image={MissHannahImg}
+        heading='Meet Miss Hannah'
+        content="She started taking dance classes when she was 8 years old.
+                Before taking classes, she absolutely loved dancing and 
+                found herself choreographing to songs in her living room. 
+                She has experience in hip-hop, contemporary, jazz, lyrical, 
+                and ballet. At the age of 11 hip-hop won her heart! Along 
+                with taking classes, she was on an award-winning competition 
+                team and was honored to share the title of captain her senior 
+                year. Her goal is to show her students the joy of dancing
+                and create a positive space where we can work on being 
+                confident in our own abilities! She is so excited for the 
+                opportunity to teach at Treasured Dance and to meet all her 
+                students!"
+      />
+      <AboutSection
+        image={MissKaitlynImg}
+        heading='Meet Miss Kaitlyn'
+        content="She is someone who has loved the art of dance since the age
+                of 7. She has experience in teaching ballet, jazz, color guard,
+                and has helped choreograph several dance in plays and musical
+                theatre. Teaching is her passion and dance is her love! She is 
+                also a small business owner of a local coffee shop that she 
+                started with her dad. She cannot wait to share her love of dance
+                with her students!"
+      />
+      <AboutSection
+        image={MissLaurenImg}
+        heading='Meet Miss Lauren'
+        content="She has been dancing since she was almost 2 years old. Growing
+         up she did ballet, jazz, tap, and ensemble team dance. Her favorites 
+         have always been jazz and ensemble! She did color guard in junior high 
+         and high school with Miss Emily as her coach. After graduating, she 
+         joined Treasured Dance Studio! Dance has always been one of her strongest 
+         passions and greatest joys. She is excited to dance with you!"
       />
       <AboutSection 
         image={FullLogoImg}

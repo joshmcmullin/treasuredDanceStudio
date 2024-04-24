@@ -5,12 +5,14 @@ import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
 /* JPG, JPEG, PNG Images */
 import StudioFullShot from '../images/home/studioFullShot.jpg';
-import BalletHomeImg from '../images/home/balletHomeImg.JPEG';
-import JazzHomeImg from '../images/home/jazzHomeImg.JPEG';
-import KidsHomeImg from '../images/home/kidsHomeImg.JPEG';
-import AdultsHomeImg from '../images/home/adultsHomeImg.jpg';
+import BalletImg from '../images/home/balletImg.jpg';
+import JazzImg from '../images/home/jazzImg.jpg';
+import KidsImg from '../images/home/kidsImg.jpg';
+import LyricalImg from '../images/home/lyricalImg.jpg';
+import HipHopImg from '../images/home/hiphopImg.jpg';
+import PerformanceImg from '../images/home/performanceImg.JPEG';
+import BarreImg from '../images/home/barreImg.jpg';
 import LocationImg from '../images/home/locationMap.png';
-import LyricalHomeImg from '../images/home/lyricalHomeImg.png';
 /* AVIF Images */
 import StudioFullShot256wAVIF from '../images/home/studioFullShot_256w_AVIF.avif';
 import StudioFullShot840wAVIF from '../images/home/studioFullShot_840w_AVIF.avif';
@@ -20,11 +22,13 @@ import StudioFullShot1610wAVIF from '../images/home/studioFullShot_1610w_AVIF.av
 import StudioFullShot1800wAVIF from '../images/home/studioFullShot_1800w_AVIF.avif';
 import StudioFullShot1930wAVIF from '../images/home/studioFullShot_1930w_AVIF.avif';
 import StudioFullShot2048wAVIF from '../images/home/studioFullShot_2048w_AVIF.avif';
-import BalletHomeImgAVIF from '../images/home/balletHomeImg.avif';
-import JazzHomeImgAVIF from '../images/home/jazzHomeImg.avif';
-import KidsHomeImgAVIF from '../images/home/kidsHomeImg.avif';
-import AdultsHomeImgAVIF from '../images/home/adultsHomeImg.avif';
-//import LyricalHomeImgAVIF from '../images/home/lyricalHomeImg.avif;'
+import BalletImgAVIF from '../images/home/balletImg.avif';
+import JazzImgAVIF from '../images/home/jazzImg.avif';
+import KidsImgAVIF from '../images/home/kidsImg.avif';
+import LyricalImgAVIF from '../images/home/lyricalImg.avif';
+import HipHopImgAVIF from '../images/home/hiphopImg.avif';
+import PerformanceImgAVIF from '../images/home/performanceImg.avif';
+import BarreImgAVIF from '../images/home/barreImg.avif';
 import LocationImg256wAVIF from '../images/home/locationMap_256w.avif';
 import LocationImg890wAVIF from '../images/home/locationMap_890w.avif';
 import LocationImg1235wAVIF from '../images/home/locationMap_1235w.avif';
@@ -48,11 +52,13 @@ import LocationImg1540wWEBP from '../images/home/locationMap_1540w.webp';
 import LocationImg1800wWEBP from '../images/home/locationMap_1800w.webp';
 import LocationImg1930wWEBP from '../images/home/locationMap_1930w.webp';
 import LocationImg2048wWEBP from '../images/home/locationMap_2048w.webp';
-import BalletHomeImgWEBP from '../images/home/balletHomeImg.webp';
-import JazzHomeImgWEBP from '../images/home/jazzHomeImg.webp';
-import KidsHomeImgWEBP from '../images/home/kidsHomeImg.webp';
-import AdultsHomeImgWEBP from '../images/home/adultsHomeImg.webp';
-import LyricalHomeImgWEBP from '../images/home/lyricalHomeImg.webp';
+import BalletImgWEBP from '../images/home/balletImg.webp';
+import JazzImgWEBP from '../images/home/jazzImg.webp';
+import KidsImgWEBP from '../images/home/kidsImg.webp';
+import LyricalImgWEBP from '../images/home/lyricalImg.webp';
+import HipHopImgWEBP from '../images/home/hiphopImg.webp';
+import PerformanceImgWEBP from '../images/home/performanceImg.webp';
+import BarreImgWEBP from '../images/home/barreImg.webp';
 
 function Home() {
   return (
@@ -60,7 +66,7 @@ function Home() {
       <h1 className='home-welcome-text'>Welcome to Treasured Dance Studio!</h1>
       <p className='home-welcome-content'>
         A premier dance studio located in Meridian, Idaho offering dance classes for 
-        adults and kids ages 3+.
+        adults and kids ages 2+.
       </p>
       <div className='home-studio-img-div'>
         <ResponsiveImage
@@ -104,43 +110,69 @@ function Home() {
         <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Ballet'
-            image={BalletHomeImg}
-            alt='Group of ballet dancers posing in black leotards'
-            avifSrcSet={`${BalletHomeImgAVIF} 540w`}
-            webpSrcSet={`${BalletHomeImgWEBP} 540w`}
+            image={BalletImg}
+            alt='Ballet Class'
+            avifSrcSet={`${BalletImgAVIF} 540w`}
+            webpSrcSet={`${BalletImgWEBP} 540w`}
             sizes="540px"
           />
           <HomeClassCard 
             name='Jazz'
-            image={JazzHomeImg}
-            alt='Group of 4 pairs of feet posing in contemporary way'
-            avifSrcSet={`${JazzHomeImgAVIF} 540w`}
-            webpSrcSet={`${JazzHomeImgWEBP} 540w`}
+            image={JazzImg}
+            alt='Jazz Class'
+            avifSrcSet={`${JazzImgAVIF} 540w`}
+            webpSrcSet={`${JazzImgWEBP} 540w`}
             sizes="540px"
           />
         </div>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Kids Combo'
-            image={KidsHomeImg}
-            alt='Children and instructor in a circle with hands raised cheering'
-            avifSrcSet={`${KidsHomeImgAVIF} 540w`}
-            webpSrcSet={`${KidsHomeImgWEBP} 540w`}
+            image={KidsImg}
+            alt='Kids Combo Class'
+            avifSrcSet={`${KidsImgAVIF} 540w`}
+            webpSrcSet={`${KidsImgWEBP} 540w`}
             sizes="540px"
           />
           <HomeClassCard
             name='Lyrical/Contemporary'
-            image={LyricalHomeImg}
+            image={LyricalImg}
             alt='Lyrical/Contemporary class'
-            //avifSrcSet={`${AdultsHomeImgAVIF} 540w`}
-            webpSrcSet={`${LyricalHomeImgWEBP} 540w`}
+            avifSrcSet={`${LyricalImgAVIF} 540w`}
+            webpSrcSet={`${LyricalImgWEBP} 540w`}
+            sizes="540px"
+          />
+        </div>
+        <div className='home-class-subcontainer'>
+          <HomeClassCard 
+            name='Hip Hop'
+            image={HipHopImg}
+            alt='Hip Hop Class'
+            avifSrcSet={`${HipHopImgAVIF} 540w`}
+            webpSrcSet={`${HipHopImgWEBP} 540w`}
+            sizes="540px"
+          />
+          <HomeClassCard
+            name='Performance/Comp'
+            image={PerformanceImg}
+            alt='Performance/Competition class'
+            avifSrcSet={`${PerformanceImgAVIF} 540w`}
+            webpSrcSet={`${PerformanceImgWEBP} 540w`}
+            sizes="540px"
+          />
+          <HomeClassCard 
+            name='Barre Fitness'
+            image={BarreImg}
+            alt='Barre Fitness Class'
+            avifSrcSet={`${BarreImgAVIF} 540w`}
+            webpSrcSet={`${BarreImgWEBP} 540w`}
             sizes="540px"
           />
         </div>
       </div>
       <div className='home-bottom-div'>
         <p>
-          We have classes Monday, Tuesday, Thursday, and Saturday each week. Kids classes start 
+          We have classes Monday, Tuesday, Thursday, Saturday, and Sunday each week. Kids classes start 
           at $45 a month, and adult classes start at $65 a month. Dancers taking more than one 
           class or parents enrolling more than one dancer receive discounts. See more about pricing
           and classes below.

@@ -14,7 +14,7 @@ function Footer() {
           <div className="footer-section">
             <h3>Phone</h3>
             <p className='footer-phone-text'>
-              <a href='tel:+12086174118'>(208) 617-4118</a>
+              <a href='tel:+12086174119'>(208) 617-4119</a>
             </p>
           </div>
           <div className="footer-section">

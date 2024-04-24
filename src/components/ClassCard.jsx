@@ -12,6 +12,8 @@ function ClassCard(props) {
         <h3>{props.price}</h3>
         <h3>{props.firstTime}</h3>
         <h3>{props.secondTime}</h3>
+        <h3>{props.thirdTime}</h3>
+        <h3>{props.fourthTime}</h3>
         <p>{props.content}</p>
       </div>    
     </div>
