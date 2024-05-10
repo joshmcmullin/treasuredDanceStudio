@@ -5,13 +5,16 @@ import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
 /* JPG, JPEG, PNG Images */
 import StudioFullShot from '../images/home/studioFullShot.jpg';
+import PreBalletImg from '../images/home/balletImg.jpg';
+import PointeImg from '../images/home/pointeImg.jpg';
 import BalletImg from '../images/home/balletImg.jpg';
 import JazzImg from '../images/home/jazzImg.jpg';
 import KidsImg from '../images/home/kidsImg.jpg';
 import LyricalImg from '../images/home/lyricalImg.jpg';
 import HipHopImg from '../images/home/hiphopImg.jpg';
-import PerformanceImg from '../images/home/performanceImg.JPEG';
+import PerformanceImg from '../images/home/performanceImg.jpg';
 import BarreImg from '../images/home/barreImg.jpg';
+import ImprovImg from '../images/home/improvImg.JPEG';
 import LocationImg from '../images/home/locationMap.png';
 /* AVIF Images */
 import StudioFullShot256wAVIF from '../images/home/studioFullShot_256w_AVIF.avif';
@@ -22,6 +25,8 @@ import StudioFullShot1610wAVIF from '../images/home/studioFullShot_1610w_AVIF.av
 import StudioFullShot1800wAVIF from '../images/home/studioFullShot_1800w_AVIF.avif';
 import StudioFullShot1930wAVIF from '../images/home/studioFullShot_1930w_AVIF.avif';
 import StudioFullShot2048wAVIF from '../images/home/studioFullShot_2048w_AVIF.avif';
+import PreBalletImgAVIF from '../images/home/balletImg.avif';
+import PointeImgAVIF from '../images/home/pointeImg.avif';
 import BalletImgAVIF from '../images/home/balletImg.avif';
 import JazzImgAVIF from '../images/home/jazzImg.avif';
 import KidsImgAVIF from '../images/home/kidsImg.avif';
@@ -29,6 +34,7 @@ import LyricalImgAVIF from '../images/home/lyricalImg.avif';
 import HipHopImgAVIF from '../images/home/hiphopImg.avif';
 import PerformanceImgAVIF from '../images/home/performanceImg.avif';
 import BarreImgAVIF from '../images/home/barreImg.avif';
+import ImprovImgAVIF from '../images/home/improvImg.avif';
 import LocationImg256wAVIF from '../images/home/locationMap_256w.avif';
 import LocationImg890wAVIF from '../images/home/locationMap_890w.avif';
 import LocationImg1235wAVIF from '../images/home/locationMap_1235w.avif';
@@ -52,6 +58,8 @@ import LocationImg1540wWEBP from '../images/home/locationMap_1540w.webp';
 import LocationImg1800wWEBP from '../images/home/locationMap_1800w.webp';
 import LocationImg1930wWEBP from '../images/home/locationMap_1930w.webp';
 import LocationImg2048wWEBP from '../images/home/locationMap_2048w.webp';
+import PreBalletImgWEBP from '../images/home/balletImg.webp';
+import PointeImgWEBP from '../images/home/pointeImg.webp';
 import BalletImgWEBP from '../images/home/balletImg.webp';
 import JazzImgWEBP from '../images/home/jazzImg.webp';
 import KidsImgWEBP from '../images/home/kidsImg.webp';
@@ -59,6 +67,7 @@ import LyricalImgWEBP from '../images/home/lyricalImg.webp';
 import HipHopImgWEBP from '../images/home/hiphopImg.webp';
 import PerformanceImgWEBP from '../images/home/performanceImg.webp';
 import BarreImgWEBP from '../images/home/barreImg.webp';
+import ImprovImgWEBP from '../images/home/improvImg.webp';
 
 function Home() {
   return (
@@ -107,13 +116,31 @@ function Home() {
       <hr className='home-hr'/>
       <h2 className='home-class-title'>Classes We Offer</h2>
       <div className='home-class-container'>
-        <div className='home-class-subcontainer'>
+      <div className='home-class-subcontainer'>
+          <HomeClassCard 
+            name='Pre-ballet'
+            image={PreBalletImg}
+            alt='Pre-ballet Class'
+            avifSrcSet={`${PreBalletImgAVIF} 540w`}
+            webpSrcSet={`${PreBalletImgWEBP} 540w`}
+            sizes="540px"
+          />
           <HomeClassCard 
             name='Ballet'
             image={BalletImg}
             alt='Ballet Class'
             avifSrcSet={`${BalletImgAVIF} 540w`}
             webpSrcSet={`${BalletImgWEBP} 540w`}
+            sizes="540px"
+          />
+        </div>
+        <div className='home-class-subcontainer'>
+          <HomeClassCard 
+            name='Pre-pointe/pointe'
+            image={PointeImg}
+            alt='Pre-pointe/pointe Class'
+            avifSrcSet={`${PointeImgAVIF} 540w`}
+            webpSrcSet={`${PointeImgWEBP} 540w`}
             sizes="540px"
           />
           <HomeClassCard 
@@ -127,17 +154,17 @@ function Home() {
         </div>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Kids Combo'
+            name='Preschool/Kids Combo'
             image={KidsImg}
-            alt='Kids Combo Class'
+            alt='Preschool/Kids Combo Class'
             avifSrcSet={`${KidsImgAVIF} 540w`}
             webpSrcSet={`${KidsImgWEBP} 540w`}
             sizes="540px"
           />
-          <HomeClassCard
+          <HomeClassCard 
             name='Lyrical/Contemporary'
             image={LyricalImg}
-            alt='Lyrical/Contemporary class'
+            alt='Lyrical/Contemporary Class'
             avifSrcSet={`${LyricalImgAVIF} 540w`}
             webpSrcSet={`${LyricalImgWEBP} 540w`}
             sizes="540px"
@@ -155,17 +182,27 @@ function Home() {
           <HomeClassCard
             name='Performance/Comp'
             image={PerformanceImg}
-            alt='Performance/Competition class'
+            alt='Performance/comp class'
             avifSrcSet={`${PerformanceImgAVIF} 540w`}
             webpSrcSet={`${PerformanceImgWEBP} 540w`}
             sizes="540px"
           />
+        </div>
+        <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Barre Fitness'
             image={BarreImg}
-            alt='Barre Fitness Class'
+            alt='Barre Class'
             avifSrcSet={`${BarreImgAVIF} 540w`}
             webpSrcSet={`${BarreImgWEBP} 540w`}
+            sizes="540px"
+          />
+          <HomeClassCard
+            name='Improv'
+            image={ImprovImg}
+            alt='Improv class'
+            avifSrcSet={`${ImprovImgAVIF} 540w`}
+            webpSrcSet={`${ImprovImgWEBP} 540w`}
             sizes="540px"
           />
         </div>

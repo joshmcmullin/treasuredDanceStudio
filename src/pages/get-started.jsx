@@ -2,19 +2,21 @@ import React from 'react';
 import Contact from '../components/Contact';
 import Slider from '../components/Slider';
 import '../styles.css';
-import BalletImg from '../images/get-started/balletImg.jpg';
-import HipHopImg from '../images/get-started/hiphopImg.jpg';
-import JazzImg from '../images/get-started/jazzImg.jpg';
-import KidsImg from '../images/get-started/kidsImg.jpg';
-import LyricalImg from '../images/get-started/lyricalImg.jpg';
+import Img1 from '../images/get-started/img1.jpg';
+import Img2 from '../images/get-started/img2.jpg';
+import Img3 from '../images/get-started/img3.jpg';
+import Img4 from '../images/get-started/img4.jpg';
+import Img5 from '../images/get-started/img5.jpg';
+import Img6 from '../images/get-started/img6.jpg';
+import Img7 from '../images/get-started/img7.jpg';
+import Img8 from '../images/get-started/img8.jpg';
+import Img9 from '../images/get-started/img9.jpg';
 
 function GetStarted() {
   const images = [
-    BalletImg,
-    HipHopImg,
-    JazzImg,
-    KidsImg,
-    LyricalImg
+    Img1, Img2, Img3, Img4,
+    Img5, Img6, Img7, Img8,
+    Img9
   ];
   return (
     <div className='get-started-outer'>
