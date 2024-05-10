@@ -55,11 +55,7 @@ function GetStarted() {
           <li>Water bottle with name on it</li>
           <li>Hair up and out of face</li>
         </ul>
-      <p>
-        Due to using space at a studio, we cannot 
-        have bare feet or half-sole shoes. We want to respect the 
-        facilities, so please come in proper class attire.
-      </p>
+      <p>We can't wait to see you in class!</p>
       </div>
     </div>
   )

@@ -66,7 +66,7 @@ function Home() {
       <h1 className='home-welcome-text'>Welcome to Treasured Dance Studio!</h1>
       <p className='home-welcome-content'>
         A premier dance studio located in Meridian, Idaho offering dance classes for 
-        adults and kids ages 2+.
+        adults and kids 18 months and older.
       </p>
       <div className='home-studio-img-div'>
         <ResponsiveImage
@@ -172,7 +172,7 @@ function Home() {
       </div>
       <div className='home-bottom-div'>
         <p>
-          We have classes Monday, Tuesday, Thursday, Saturday, and Sunday each week. Kids classes start 
+          We have classes everyday except Sunday. Kids classes start 
           at $45 a month, and adult classes start at $65 a month. Dancers taking more than one 
           class or parents enrolling more than one dancer receive discounts. See more about pricing
           and classes below.
@@ -184,15 +184,15 @@ function Home() {
       </div>
       <div className='home-address-div'>
         <h2>Come Visit Us</h2>
-        <p>We are located inside EnVie Fitness Studio in Meridian on Linder
-          and Chinden!
+        <p>We are located inside Cherry Plaza Center Meridian on Fairview
+          and Meridian!
         </p>
         <p>
-          1735 W Chinden Blvd #120, Meridian, ID 83646.
+          58 E Fairview Ave, Meridian, ID 83646.
         </p>
       </div>
       <div className='home-location-img-div'>
-        <ResponsiveImage 
+        {/* <ResponsiveImage 
           avifSrcSet={`
             ${LocationImg256wAVIF} 256w,
             ${LocationImg890wAVIF} 890w,
@@ -218,7 +218,7 @@ function Home() {
           "
           src={LocationImg}
           alt='Dance studio located in Meridian, Idaho'
-        />
+        /> */}
       </div>
     </div>
   )

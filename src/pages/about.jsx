@@ -3,7 +3,6 @@ import AboutSection from '../components/AboutSection';
 import MissEmilyImg from '../images/about/emilyImg.jpg';
 import MissHannahImg from '../images/about/hannahImg.jpg';
 import MissKaitlynImg from '../images/about/kaitlynImg.jpg';
-import MissLaurenImg from '../images/about/laurenImg.jpg';
 import FullLogoImg from '../images/FullLogo.PNG';
 import '../styles.css';
 
@@ -51,16 +50,6 @@ function About() {
                 also a small business owner of a local coffee shop that she 
                 started with her dad. She cannot wait to share her love of dance
                 with her students!"
-      />
-      <AboutSection
-        image={MissLaurenImg}
-        heading='Meet Miss Lauren'
-        content="She has been dancing since she was almost 2 years old. Growing
-         up she did ballet, jazz, tap, and ensemble team dance. Her favorites 
-         have always been jazz and ensemble! She did color guard in junior high 
-         and high school with Miss Emily as her coach. After graduating, she 
-         joined Treasured Dance Studio! Dance has always been one of her strongest 
-         passions and greatest joys. She is excited to dance with you!"
       />
       <AboutSection 
         image={FullLogoImg}

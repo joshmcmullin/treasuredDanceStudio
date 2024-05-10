@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Address</h3>
-            <p>1735 W Chinden Blvd #120</p>
+            <p>58 E Fairview Ave</p>
             <p>Meridian, ID 83646</p>
           </div>
           <div className="footer-section">
@@ -37,6 +37,9 @@ function Footer() {
             <li>
               <Link to="/get-started">Get Started</Link>
             </li>
+            <li>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
           </ul>
         </div>
         <div className="footer-social">
@@ -56,7 +59,7 @@ function Footer() {
         </div>
       </footer>
       <div className='copyright-div'>
-        <p>© 2023 Treasured Dance Studio, LLC - All Rights Reserved</p>
+        <p>© 2024 Treasured Dance Studio, LLC - All Rights Reserved</p>
       </div>   
     </>
   );
