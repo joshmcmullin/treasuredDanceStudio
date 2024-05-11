@@ -43,7 +43,7 @@ function Classes() {
         price='$65 per month'
         firstTime='8-11: Tues 2:30 - 3:30pm'
         secondTime='8-11: Thurs 4:45 - 5:45pm'
-        thirdTime='12-18: Mon 6:30 - 7:30pm'
+        thirdTime='12-18: Thurs 7:30 - 8:30pm'
         fourthTime='18+: Mon 8:35 - 9:35pm'
         content="Ballet is the core foundation for other dance styles. Here at Treasured
                 Dance Studio we will use several ballet terms and guidelines to help our
@@ -55,7 +55,7 @@ function Classes() {
         heading='Pre/Pointe'
         age='12+'
         price='$30 per month'
-        firstTime='12+: Mon 6:00 - 6:30pm'
+        firstTime='12+: Thurs 7:00 - 7:30pm'
         content="Pre/Pointe is for those dancers aspiring to learn how to dance on 
         pointe. This is an introductory class where dancers will build up strength 
         and muscle to be able to dance on pointe. Dancers must be evaluated by our 
@@ -97,7 +97,7 @@ function Classes() {
         age='8+'
         price='$65 per month'
         firstTime='8-12: Fri 4:45 - 5:45pm'
-        secondTime='12-18: Thurs 7:30 - 8:30pm'
+        secondTime='12-18: Mon 7:15 - 8:15pm'
         thirdTime='18+: Thurs 8:35 - 9:35pm'
         content="This is an expressive dance class where we take the smoothness of ballet
                 mixed with the sharpness of jazz. This class will dive into emotions and 
@@ -152,7 +152,7 @@ function Classes() {
         heading='Improv'
         age='8+'
         price='$80 for 5 classes'
-        firstTime='8+: Fri 6:00 - 7:00pm'
+        firstTime='8+: Fri 6:45 - 7:45pm'
         content="Improv is a once a month class that teaches students how to express themselves 
         through music. Where students will learn how to let their body flow through motions with 
         meaning and using the space around them."
