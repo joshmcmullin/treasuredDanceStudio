@@ -11,12 +11,22 @@ import Img6 from '../images/get-started/img6.jpg';
 import Img7 from '../images/get-started/img7.jpg';
 import Img8 from '../images/get-started/img8.jpg';
 import Img9 from '../images/get-started/img9.jpg';
+import Img10 from '../images/get-started/img10.jpg';
+import Img11 from '../images/get-started/img11.jpg';
+import Img12 from '../images/get-started/img12.jpg';
+import Img13 from '../images/get-started/img13.jpg';
+import Img14 from '../images/get-started/img14.jpg';
+import Img15 from '../images/get-started/img15.jpg';
+import Img16 from '../images/get-started/img16.jpg';
+import Img17 from '../images/get-started/img17.png';
 
 function GetStarted() {
   const images = [
     Img1, Img2, Img3, Img4,
     Img5, Img6, Img7, Img8,
-    Img9
+    Img9, Img10, Img11, Img12,
+    Img13, Img14, Img15, Img16,
+    Img17
   ];
   return (
     <div className='get-started-outer'>

@@ -5,7 +5,7 @@ import '../styles.css'
 import ResponsiveImage from '../components/ResponsiveImg';
 /* JPG, JPEG, PNG Images */
 import StudioFullShot from '../images/home/studioFullShot.jpg';
-import PreBalletImg from '../images/home/balletImg.jpg';
+import PreBalletImg from '../images/home/preBalletImg.jpg';
 import PointeImg from '../images/home/pointeImg.jpg';
 import BalletImg from '../images/home/balletImg.jpg';
 import JazzImg from '../images/home/jazzImg.jpg';
@@ -25,7 +25,7 @@ import StudioFullShot1610wAVIF from '../images/home/studioFullShot_1610w_AVIF.av
 import StudioFullShot1800wAVIF from '../images/home/studioFullShot_1800w_AVIF.avif';
 import StudioFullShot1930wAVIF from '../images/home/studioFullShot_1930w_AVIF.avif';
 import StudioFullShot2048wAVIF from '../images/home/studioFullShot_2048w_AVIF.avif';
-import PreBalletImgAVIF from '../images/home/balletImg.avif';
+import PreBalletImgAVIF from '../images/home/preBalletImg.avif';
 import PointeImgAVIF from '../images/home/pointeImg.avif';
 import BalletImgAVIF from '../images/home/balletImg.avif';
 import JazzImgAVIF from '../images/home/jazzImg.avif';
@@ -58,7 +58,7 @@ import LocationImg1540wWEBP from '../images/home/locationMap_1540w.webp';
 import LocationImg1800wWEBP from '../images/home/locationMap_1800w.webp';
 import LocationImg1930wWEBP from '../images/home/locationMap_1930w.webp';
 import LocationImg2048wWEBP from '../images/home/locationMap_2048w.webp';
-import PreBalletImgWEBP from '../images/home/balletImg.webp';
+import PreBalletImgWEBP from '../images/home/preBalletImg.webp';
 import PointeImgWEBP from '../images/home/pointeImg.webp';
 import BalletImgWEBP from '../images/home/balletImg.webp';
 import JazzImgWEBP from '../images/home/jazzImg.webp';
@@ -118,9 +118,9 @@ function Home() {
       <div className='home-class-container'>
       <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Pre-ballet'
+            name='Pre Ballet'
             image={PreBalletImg}
-            alt='Pre-ballet Class'
+            alt='Pre Ballet Class'
             avifSrcSet={`${PreBalletImgAVIF} 540w`}
             webpSrcSet={`${PreBalletImgWEBP} 540w`}
             sizes="540px"
@@ -136,9 +136,9 @@ function Home() {
         </div>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Pre-pointe/pointe'
+            name='Pre/Pointe'
             image={PointeImg}
-            alt='Pre-pointe/pointe Class'
+            alt='Pre/Pointe Class'
             avifSrcSet={`${PointeImgAVIF} 540w`}
             webpSrcSet={`${PointeImgWEBP} 540w`}
             sizes="540px"

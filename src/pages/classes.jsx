@@ -1,5 +1,6 @@
 import React from 'react';
 import ClassCalendar from '../images/classCalendarNew.jpg';
+import PreBalletImg from '../images/home/preBalletImg.jpg';
 import PointeImg from '../images/home/pointeImg.jpg';
 import BalletImg from '../images/home/balletImg.jpg';
 import JazzImg from '../images/home/jazzImg.jpg';
@@ -24,13 +25,16 @@ function Classes() {
         classes.
       </p>
       <ClassCard 
-        image={BalletImg}
-        heading='Pre-ballet'
+        image={PreBalletImg}
+        heading='Pre Ballet'
         age='5-7'
         price='$55-65 per month'
         firstTime='5-7: Tues 4:45 - 5:45pm'
         secondTime='5-7: Thurs 2:30 - 3:30pm'
-        content="Pre-ballet description here."
+        content="Pre Ballet is the class right before students jump into the world 
+        full of dance! This class is essential for our young ones as from this 
+        class they can venture into any genre of dance they would like to go into 
+        and have the core foundation of dance."
       />
       <ClassCard 
         image={BalletImg}
@@ -48,11 +52,15 @@ function Classes() {
       />
       <ClassCard 
         image={PointeImg}
-        heading='Pre-pointe/Pointe'
+        heading='Pre/Pointe'
         age='12+'
         price='$30 per month'
         firstTime='12+: Mon 6:00 - 6:30pm'
-        content="Pointe description here."
+        content="Pre/Pointe is for those dancers aspiring to learn how to dance on 
+        pointe. This is an introductory class where dancers will build up strength 
+        and muscle to be able to dance on pointe. Dancers must be evaluated by our 
+        pointe instructor before going onto pointe. Dancers will need to be in 
+        proper ballet attire for this class. "
       />
       <ClassCard 
         image={JazzImg}
@@ -145,7 +153,9 @@ function Classes() {
         age='8+'
         price='$80 for 5 classes'
         firstTime='8+: Fri 6:00 - 7:00pm'
-        content="Improv description here."
+        content="Improv is a once a month class that teaches students how to express themselves 
+        through music. Where students will learn how to let their body flow through motions with 
+        meaning and using the space around them."
       />
       <div className='class-bottom-div'>
         <h2>Ready to get started?</h2>
