@@ -4,11 +4,13 @@ import PreBalletImg from '../images/home/preBalletImg.jpg';
 import PointeImg from '../images/home/pointeImg.jpg';
 import BalletImg from '../images/home/balletImg.jpg';
 import JazzImg from '../images/home/jazzImg.jpg';
-import KidsImg from '../images/home/kidsImg.jpg';
+import PreschoolImg from '../images/home/preschoolImg.jpg';
+import KidsComboImg from '../images/home/kidsComboImg.jpg';
 import LyricalImg from '../images/home/lyricalImg.jpg'
 import HipHopImg from '../images/home/hiphopImg.jpg'
 import PerformanceImg from '../images/home/performanceImg.jpg'
 import BarreImg from '../images/home/barreImg.jpg';
+import PomImg from '../images/home/pomImg.jpg';
 import ImprovImg from '../images/home/improvImg.JPEG';
 import ClassCard from '../components/ClassCard';
 import {Link} from 'react-router-dom';
@@ -19,7 +21,7 @@ function Classes() {
       <h1>Dance Classes</h1>
       <img className='class-calendar' src={ClassCalendar} alt='Daily Class Calendar'></img>
       <p className='class-intro-text'>
-        We offer different dance classes for the different age groups. Each class is one time
+        We offer different dance classes for the different age groups. Each class is once 
         per week. Some classes have multiple timeslots for availability. There is a discount 
         for enrolling in more than one class, or for enrolling more than one dancer in our 
         classes.
@@ -78,16 +80,25 @@ function Classes() {
                 what they've learned in class that day."
       />
       <ClassCard 
-        image={KidsImg}
-        heading='Preschool/Kids Combo'
-        age='1.5 - 5'
-        price='$45-55 per month'
+        image={PreschoolImg}
+        heading='Preschool'
+        age='1.5 - 3'
+        price='$45 per month'
         firstTime='1.5-3: Mon 4:15 - 4:45pm'
         secondTime='1.5-3: Sat 9:45 - 10:30am'
-        thirdTime='3-5: Mon 4:45 - 5:30pm'
-        fourthTime='3-5: Sat 9:45 - 10:30am'
+        content="This is a fun and upbeat class for those littles who want to start 
+        dance! Our little dancers will start to learn dance and movement through 
+        story telling and imagination. "
+      />
+      <ClassCard 
+        image={KidsComboImg}
+        heading='Kids Combo'
+        age='3 - 5'
+        price='$55 per month'
+        firstTime='3-5: Mon 4:45 - 5:30pm'
+        secondTime='3-5: Sat 9:45 - 10:30am'
         content="Kids combo! These classes are so fun for kids ranging in ages 
-                from 1.5-5. The combo class includes a mixture of ballet and 
+                from 3-5. The combo class includes a mixture of ballet and 
                 acrobatic arts. In these classes students will learn body movement, 
                 pathways, rhythm, and more in a safe and fun learning environment."
       />
@@ -148,10 +159,20 @@ function Classes() {
                 sense of inner strength."
       />
       <ClassCard
+        image={PomImg}
+        heading='Pom'
+        age='8+'
+        price='$65 per month'
+        firstTime='8+: Fri 6:45 - 7:45pm'
+        content="This is a class where cheerleading and dance meet. The movements are sharp 
+        and precise while working through dance. There will be a mixture of cheer and dance 
+        language used. This is an upbeat and high energy class! "
+      />
+      <ClassCard
         image={ImprovImg}
         heading='Improv'
         age='8+'
-        price='$80 for 5 classes'
+        price='$55 for 4 classes'
         firstTime='8+: Fri 6:45 - 7:45pm'
         content="Improv is a once a month class that teaches students how to express themselves 
         through music. Where students will learn how to let their body flow through motions with 

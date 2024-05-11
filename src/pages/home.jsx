@@ -9,11 +9,13 @@ import PreBalletImg from '../images/home/preBalletImg.jpg';
 import PointeImg from '../images/home/pointeImg.jpg';
 import BalletImg from '../images/home/balletImg.jpg';
 import JazzImg from '../images/home/jazzImg.jpg';
-import KidsImg from '../images/home/kidsImg.jpg';
+import PreschoolImg from '../images/home/preschoolImg.jpg';
+import KidsComboImg from '../images/home/kidsComboImg.jpg';
 import LyricalImg from '../images/home/lyricalImg.jpg';
 import HipHopImg from '../images/home/hiphopImg.jpg';
 import PerformanceImg from '../images/home/performanceImg.jpg';
 import BarreImg from '../images/home/barreImg.jpg';
+import PomImg from '../images/home/pomImg.jpg';
 import ImprovImg from '../images/home/improvImg.JPEG';
 import LocationImg from '../images/home/locationMap.png';
 /* AVIF Images */
@@ -29,11 +31,13 @@ import PreBalletImgAVIF from '../images/home/preBalletImg.avif';
 import PointeImgAVIF from '../images/home/pointeImg.avif';
 import BalletImgAVIF from '../images/home/balletImg.avif';
 import JazzImgAVIF from '../images/home/jazzImg.avif';
-import KidsImgAVIF from '../images/home/kidsImg.avif';
+import PreschoolImgAVIF from '../images/home/preschoolImg.avif';
+import KidsComboImgAVIF from '../images/home/kidsComboImg.avif';
 import LyricalImgAVIF from '../images/home/lyricalImg.avif';
 import HipHopImgAVIF from '../images/home/hiphopImg.avif';
 import PerformanceImgAVIF from '../images/home/performanceImg.avif';
 import BarreImgAVIF from '../images/home/barreImg.avif';
+import PomImgAVIF from '../images/home/pomImg.avif';
 import ImprovImgAVIF from '../images/home/improvImg.avif';
 import LocationImg256wAVIF from '../images/home/locationMap_256w.avif';
 import LocationImg890wAVIF from '../images/home/locationMap_890w.avif';
@@ -62,11 +66,13 @@ import PreBalletImgWEBP from '../images/home/preBalletImg.webp';
 import PointeImgWEBP from '../images/home/pointeImg.webp';
 import BalletImgWEBP from '../images/home/balletImg.webp';
 import JazzImgWEBP from '../images/home/jazzImg.webp';
-import KidsImgWEBP from '../images/home/kidsImg.webp';
+import PreschoolImgWEBP from '../images/home/preschoolImg.webp';
+import KidsComboImgWEBP from '../images/home/kidsComboImg.webp';
 import LyricalImgWEBP from '../images/home/lyricalImg.webp';
 import HipHopImgWEBP from '../images/home/hiphopImg.webp';
 import PerformanceImgWEBP from '../images/home/performanceImg.webp';
 import BarreImgWEBP from '../images/home/barreImg.webp';
+import PomImgWEBP from '../images/home/pomImg.jpg';
 import ImprovImgWEBP from '../images/home/improvImg.webp';
 
 function Home() {
@@ -154,13 +160,23 @@ function Home() {
         </div>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Preschool/Kids Combo'
-            image={KidsImg}
-            alt='Preschool/Kids Combo Class'
-            avifSrcSet={`${KidsImgAVIF} 540w`}
-            webpSrcSet={`${KidsImgWEBP} 540w`}
+            name='Preschool'
+            image={PreschoolImg}
+            alt='Preschool Class'
+            avifSrcSet={`${PreschoolImgAVIF} 540w`}
+            webpSrcSet={`${PreschoolImgWEBP} 540w`}
             sizes="540px"
           />
+          <HomeClassCard 
+            name='Kids Combo'
+            image={KidsComboImg}
+            alt='Kids Combo Class'
+            avifSrcSet={`${KidsComboImgAVIF} 540w`}
+            webpSrcSet={`${KidsComboImgWEBP} 540w`}
+            sizes="540px"
+          />
+        </div>
+        <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Lyrical/Contemporary'
             image={LyricalImg}
@@ -169,8 +185,6 @@ function Home() {
             webpSrcSet={`${LyricalImgWEBP} 540w`}
             sizes="540px"
           />
-        </div>
-        <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Hip Hop'
             image={HipHopImg}
@@ -179,6 +193,8 @@ function Home() {
             webpSrcSet={`${HipHopImgWEBP} 540w`}
             sizes="540px"
           />
+        </div>
+        <div className='home-class-subcontainer'>
           <HomeClassCard
             name='Performance/Comp'
             image={PerformanceImg}
@@ -187,14 +203,22 @@ function Home() {
             webpSrcSet={`${PerformanceImgWEBP} 540w`}
             sizes="540px"
           />
-        </div>
-        <div className='home-class-subcontainer'>
           <HomeClassCard 
             name='Barre Fitness'
             image={BarreImg}
             alt='Barre Class'
             avifSrcSet={`${BarreImgAVIF} 540w`}
             webpSrcSet={`${BarreImgWEBP} 540w`}
+            sizes="540px"
+          />
+        </div>
+        <div className='home-class-subcontainer'>
+          <HomeClassCard
+            name='Pom'
+            image={PomImg}
+            alt='Pom class'
+            avifSrcSet={`${PomImgAVIF} 540w`}
+            webpSrcSet={`${PomImgWEBP} 540w`}
             sizes="540px"
           />
           <HomeClassCard

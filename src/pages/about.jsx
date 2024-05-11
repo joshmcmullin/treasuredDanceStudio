@@ -15,14 +15,14 @@ function About() {
         heading='Meet Miss Emily'
         content="She has a wonderful husband and baby boy! She has
                 been a dance coach for 9 years, along with several
-                years of cheer experience. She is also American Barre
+                years of cheer experience. She is American Barre
                 Technique certified to help teach strength and
-                flexibility. Her favorite style of dance is Jazz, but
-                she has been studying several others such as lyrical,
-                contemporary, ballet, and pom for multiple years. 
-                Opening a studio has been a goal of Emily's and bringing
-                Treasured Dance Studio to light has brought her tremendous
-                joy."
+                flexibility. She is also certified through Once Upon a Ballet.
+                Her favorite style of dance is Jazz, but she has been studying 
+                several others such as lyrical, contemporary, ballet, and pom 
+                for multiple years. Opening a studio has been a goal of Emily's 
+                and bringing Treasured Dance Studio to light has brought her 
+                tremendous joy."
       />
       <AboutSection
         image={MissHannahImg}
