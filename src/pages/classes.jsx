@@ -45,8 +45,9 @@ function Classes() {
         price='$65 per month'
         firstTime='8-11: Tues 2:30 - 3:30pm'
         secondTime='8-11: Thurs 4:45 - 5:45pm'
-        thirdTime='12-18: Thurs 7:30 - 8:30pm'
-        fourthTime='18+: Mon 8:35 - 9:35pm'
+        thirdTime='8-11: Wed 6:30 - 7:30pm'
+        fourthTime='12-18: Thurs 7:30 - 8:30pm'
+        fifthTime='18+: Mon 8:35 - 9:35pm'
         content="Ballet is the core foundation for other dance styles. Here at Treasured
                 Dance Studio we will use several ballet terms and guidelines to help our
                 students gain the knowledge they need to succeed in dance. The flow of the 
@@ -71,6 +72,8 @@ function Classes() {
         price='$65 per month'
         firstTime='6-11: Tues 6 - 7pm'
         secondTime='12-18: Mon 7:35 - 8:35pm'
+        thirdTime='12-18: Wed 5:15 - 6:15pm'
+        fourthTime='18+: Wed 8:30 - 9:30pm'
         content="Jazz is all about energy, variety, and strength. We
                 pair contemporary with jazz so dancers can learn 
                 necessary variety through floor work, standing, isolation,
@@ -122,7 +125,7 @@ function Classes() {
         heading='Hip Hop'
         age='3+'
         price='$45-65 per month'
-        firstTime='3-5: Wed 3:00 - 4:00pm'
+        firstTime='3-5: Wed 3:00 - 3:45pm'
         secondTime='6-11: Thurs 6:00 - 7:00pm'
         thirdTime='12-18: Tues 7:30 - 8:30pm'
         fourthTime='18+: Tues 8:35 - 9:35pm'
