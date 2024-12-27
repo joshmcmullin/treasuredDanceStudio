@@ -50,7 +50,7 @@ function GetStarted() {
         <h3>Ballet</h3>
         <ul>
           <li>Leotard of any color</li>
-          <li>Tights</li>
+          <li>Skin-colored tights</li>
           <li>Ballet slippers</li>
           <li>Shorts, skirts, or leggings may be worn
               over the leotard</li>
@@ -61,7 +61,7 @@ function GetStarted() {
         <ul>
           <li>Leggings</li>
           <li>Shirt or tank that you can move in</li>
-          <li>Jazz shoes or ballet slippers</li>
+          <li>Jazz shoes, ballet slippers, lyrical shoes</li>
           <li>Hair up and out of face</li>
           <li>Water bottle</li>
         </ul>

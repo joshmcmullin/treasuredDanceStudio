@@ -111,24 +111,22 @@ function Classes() {
         age='8+'
         price='$65 per month'
         firstTime='8-12: Fri 4:45 - 5:45pm'
-        secondTime='12-18: Mon 7:15 - 8:15pm'
+        secondTime='12-18: Mon 7:30 - 8:30pm'
         thirdTime='18+: Thurs 8:35 - 9:35pm'
         content="This is an expressive dance class where we take the smoothness of ballet
                 mixed with the sharpness of jazz. This class will dive into emotions and 
                 creating with our body. Due to the class taking a mixture of both ballet 
-                and jazz, we recommend students in this class also be in either ballet or jazz.
-                 The structure of this class is such: full-body warm up, strengthening, 
-                 improv, center and floor work, and a dance."
+                and jazz, we recommend students in this class also be in either ballet or jazz."
       />
       <ClassCard 
         image={HipHopImg}
         heading='Hip Hop'
         age='3+'
-        price='$45-65 per month'
-        firstTime='3-5: Wed 3:00 - 3:45pm'
+        price='$55-65 per month'
+        firstTime='3-5: Wed 3:15 - 4:00pm'
         secondTime='6-11: Thurs 6:00 - 7:00pm'
         thirdTime='12-18: Tues 7:30 - 8:30pm'
-        fourthTime='18+: Thurs 8:35 - 9:35pm'
+        fourthTime='18+: Tues 8:35 - 9:35pm'
         content="Hip hop is a vibrant and expressive dance that uses bounces and rocks.
                 This class will dive into not only hip hop dance, but the culture as a whole!
                 The structure is as follows: Full-body warm up, technique/strengthening, center
@@ -138,8 +136,8 @@ function Classes() {
         image={PerformanceImg}
         heading='Performance/Comp'
         age='10+'
-        price='Price to be determined'
-        firstTime='Time to be determined'
+        price='$25-40/hr and fees'
+        firstTime='Time based on private lesson availability'
         content="Our performance/competition team is made up of dancers who want to 
                 enter the competition and parade world! Dancers will train together and be placed
                 into different available times based on groupings. The cost of the class depends
@@ -166,7 +164,7 @@ function Classes() {
         heading='Pom'
         age='8+'
         price='$65 per month'
-        firstTime='8+: Mon 8:15 - 9:15pm'
+        firstTime='8+: Mon 8:30 - 9:30pm'
         content="This is a class where cheerleading and dance meet. The movements are sharp 
         and precise while working through dance. There will be a mixture of cheer and dance 
         language used. This is an upbeat and high energy class! "
