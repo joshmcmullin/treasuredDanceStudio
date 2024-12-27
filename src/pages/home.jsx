@@ -142,11 +142,11 @@ function Home() {
         </div>
         <div className='home-class-subcontainer'>
           <HomeClassCard 
-            name='Pre/Pointe'
-            image={PointeImg}
-            alt='Pre/Pointe Class'
-            avifSrcSet={`${PointeImgAVIF} 540w`}
-            webpSrcSet={`${PointeImgWEBP} 540w`}
+            name='Kids Combo'
+            image={KidsComboImg}
+            alt='Kids Combo Class'
+            avifSrcSet={`${KidsComboImgAVIF} 540w`}
+            webpSrcSet={`${KidsComboImgWEBP} 540w`}
             sizes="540px"
           />
           <HomeClassCard 
@@ -155,24 +155,6 @@ function Home() {
             alt='Jazz Class'
             avifSrcSet={`${JazzImgAVIF} 540w`}
             webpSrcSet={`${JazzImgWEBP} 540w`}
-            sizes="540px"
-          />
-        </div>
-        <div className='home-class-subcontainer'>
-          <HomeClassCard 
-            name='Preschool'
-            image={PreschoolImg}
-            alt='Preschool Class'
-            avifSrcSet={`${PreschoolImgAVIF} 540w`}
-            webpSrcSet={`${PreschoolImgWEBP} 540w`}
-            sizes="540px"
-          />
-          <HomeClassCard 
-            name='Kids Combo'
-            image={KidsComboImg}
-            alt='Kids Combo Class'
-            avifSrcSet={`${KidsComboImgAVIF} 540w`}
-            webpSrcSet={`${KidsComboImgWEBP} 540w`}
             sizes="540px"
           />
         </div>

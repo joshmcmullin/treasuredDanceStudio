@@ -30,9 +30,9 @@ function Classes() {
         image={PreBalletImg}
         heading='Pre Ballet'
         age='5-7'
-        price='$55-65 per month'
+        price='$65-65 per month'
         firstTime='5-7: Tues 4:45 - 5:45pm'
-        secondTime='5-7: Thurs 2:30 - 3:30pm'
+        secondTime='5-7: Sat 11:15 - 12:15pm'
         content="Pre Ballet is the class right before students jump into the world 
         full of dance! This class is essential for our young ones as from this 
         class they can venture into any genre of dance they would like to go into 
@@ -42,38 +42,23 @@ function Classes() {
         image={BalletImg}
         heading='Ballet'
         age='8+'
-        price='$65 per month'
-        firstTime='8-11: Tues 2:30 - 3:30pm'
+        price='$65-90 per month'
+        firstTime='8-11: Wed 6:30 - 7:30pm'
         secondTime='8-11: Thurs 4:45 - 5:45pm'
-        thirdTime='8-11: Wed 6:30 - 7:30pm'
-        fourthTime='12-18: Thurs 7:30 - 8:30pm'
-        fifthTime='18+: Tues 8:35 - 9:35pm'
+        thirdTime='12-18: Thurs 7:00 - 8:30pm'
+        fourthTime='18+: Wed 8:30 - 9:30pm'
         content="Ballet is the core foundation for other dance styles. Here at Treasured
                 Dance Studio we will use several ballet terms and guidelines to help our
                 students gain the knowledge they need to succeed in dance. The flow of the 
                 class: Barre, move to center accompanied by small and big jumps."
       />
       <ClassCard 
-        image={PointeImg}
-        heading='Pre/Pointe'
-        age='12+'
-        price='$30 per month'
-        firstTime='12+: Thurs 7:00 - 7:30pm'
-        content="Pre/Pointe is for those dancers aspiring to learn how to dance on 
-        pointe. This is an introductory class where dancers will build up strength 
-        and muscle to be able to dance on pointe. Dancers must be evaluated by our 
-        pointe instructor before going onto pointe. Dancers will need to be in 
-        proper ballet attire for this class. "
-      />
-      <ClassCard 
         image={JazzImg}
         heading='Jazz'
         age='6+'
         price='$65 per month'
-        firstTime='6-11: Tues 6 - 7pm'
-        secondTime='12-18: Mon 7:35 - 8:35pm'
-        thirdTime='12-18: Wed 5:15 - 6:15pm'
-        fourthTime='18+: Wed 8:30 - 9:30pm'
+        firstTime='6-11: Tues 6:00 - 7:00pm'
+        secondTime='12-18: Mon 6:30 - 7:30pm'
         content="Jazz is all about energy, variety, and strength. We
                 pair contemporary with jazz so dancers can learn 
                 necessary variety through floor work, standing, isolation,
@@ -83,26 +68,17 @@ function Classes() {
                 what they've learned in class that day."
       />
       <ClassCard 
-        image={PreschoolImg}
-        heading='Preschool'
-        age='1.5 - 3'
-        price='$45 per month'
-        firstTime='1.5-3: Mon 4:15 - 4:45pm'
-        secondTime='1.5-3: Sat 9:45 - 10:30am'
-        content="This is a fun and upbeat class for those littles who want to start 
-        dance! Our little dancers will start to learn dance and movement through 
-        story telling and imagination. "
-      />
-      <ClassCard 
         image={KidsComboImg}
         heading='Kids Combo'
-        age='3 - 5'
+        age='3 - 4'
         price='$55 per month'
-        firstTime='3-5: Mon 4:45 - 5:30pm'
-        secondTime='3-5: Sat 9:45 - 10:30am'
+        firstTime='3: Mon 4:30 - 5:15pm'
+        secondTime='3: Sat 9:30 - 10:15am'
+        thirdTime='4: Mon 5:15 - 6:00pm'
+        fourthTime='4: Sat 10:15 - 11:00am'
         content="Kids combo! These classes are so fun for kids ranging in ages 
-                from 3-5. The combo class includes a mixture of ballet and 
-                acrobatic arts. In these classes students will learn body movement, 
+                from 3-4. The combo class includes a mixture of ballet and 
+                jazz. In these classes students will learn body movement, 
                 pathways, rhythm, and more in a safe and fun learning environment."
       />
       <ClassCard
